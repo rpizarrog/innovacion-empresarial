@@ -16,7 +16,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 26,Casado,Local,95,75,5,-1,7,Medio,15106,No,No,Debil,Media,Regulares,Si,Buena,Extrovertido,Media,3,Mala,Si,1,Privada,-10,Si,Si
 24,Soltero,Local,81,73,3,0,0,Medio,5021,No,Si,Moderado,Media,Conflictivas,No,Regular,Extrovertido,Baja,7,Regular,Si,-1,Publica,0,Si,Si
 22,Soltero,Foráneo,89,58,7,4,9,Medio,4216,No,Si,Debil,Media,Buenas,No,Buena,Extrovertido,Alta,7,Regular,Si,0,Privada,14,Si,Si
-22,Union libre,Local,91,78,2,0,8,Medio,12117,Si,No,Debil,Media,Regulares,Si,Buena,Introvertido,Alta,8,Mala,Si,4,Publica,-13,Si,Si
+22,Union libre,Local,91,78,2,0,8,Medio,12117,Si,No,Debil,Media,Regulares,Si,Buena,Introvertido,Alta,8,Mala,Si,4,Publica,25,Si,Si
 22,Soltero,Local,93,67,0,2,5,Bajo,7419,Si,No,Debil,Baja,Regulares,No,Regular,Extrovertido,Alta,6,Regular,No,3,Publica,6,Si,No
 20,Soltero,Local,76,72,5,1,7,Medio,12755,No,No,Moderado,Media,Regulares,Si,Buena,Introvertido,Media,5,Buena,Si,3,Publica,39,No,Si
 23,Soltero,Foráneo,74,69,12,5,-4,Bajo,2525,Si,No,Debil,Media,Conflictivas,Si,Regular,Introvertido,Baja,3,Regular,Si,2,Privada,42,Si,No
@@ -406,7 +406,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 25,Soltero,Foráneo,72,93,4,2,11,Medio,16191,Si,No,Moderado,Baja,Conflictivas,No,Mala,Extrovertido,Media,6,Regular,Si,4,Publica,28,Si,No
 23,Casado,Local,69,85,3,0,7,Medio,17822,No,No,Debil,Alta,Buenas,No,Regular,Extrovertido,Alta,7,Regular,Si,4,Publica,49,No,Si
 20,Casado,Local,75,67,3,6,5,Medio,15995,No,No,Debil,Alta,Buenas,Si,Mala,Extrovertido,Media,7,Regular,No,3,Publica,42,Si,No
-19,Soltero,Local,95,77,4,4,1,Medio,15649,Si,No,Debil,Media,Regulares,No,Buena,Extrovertido,Alta,7,Mala,No,3,Publica,-14,Si,No
+19,Soltero,Local,95,77,4,4,1,Medio,15649,Si,No,Debil,Media,Regulares,No,Buena,Extrovertido,Alta,7,Mala,No,3,Publica,25,Si,No
 23,Casado,Foráneo,79,71,0,1,7,Alto,10418,No,No,Fuerte,Media,Conflictivas,Si,Buena,Extrovertido,Baja,4,Regular,Si,2,Publica,18,Si,No
 19,Soltero,Foráneo,77,75,4,2,5,Bajo,10932,No,No,Moderado,Baja,Conflictivas,No,Regular,Extrovertido,Media,8,Regular,Si,0,Publica,58,No,Si
 22,Soltero,Local,58,69,8,0,6,Medio,16376,Si,No,Debil,Baja,Regulares,Si,Buena,Extrovertido,Media,4,Regular,Si,3,Privada,37,Si,Si
@@ -1344,7 +1344,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 20,Union libre,Local,79,98,7,0,11,Medio,2181,Si,Si,Fuerte,Baja,Conflictivas,Si,Buena,Introvertido,Alta,6,Buena,Si,3,Publica,18,Si,No
 19,Soltero,Local,106,70,8,2,6,Alto,12365,No,No,Debil,Baja,Buenas,Si,Regular,Extrovertido,Baja,7,Buena,Si,3,Publica,23,No,Si
 21,Casado,Foráneo,62,72,2,-1,9,Medio,18061,Si,No,Debil,Baja,Regulares,Si,Buena,Extrovertido,Alta,6,Regular,Si,4,Publica,35,Si,No
-26,Soltero,Foráneo,71,54,6,4,12,Medio,5338,Si,No,Fuerte,Media,Conflictivas,Si,Regular,Extrovertido,Alta,5,Mala,Si,0,Publica,-14,Si,Si
+26,Soltero,Foráneo,71,54,6,4,12,Medio,5338,Si,No,Fuerte,Media,Conflictivas,Si,Regular,Extrovertido,Alta,5,Mala,Si,0,Publica,25,Si,Si
 20,Union libre,Local,59,77,4,2,16,Medio,11735,Si,No,Moderado,Baja,Regulares,No,Buena,Introvertido,Alta,9,Buena,Si,6,Publica,13,No,Si
 20,Soltero,Local,89,83,4,3,13,Medio,12390,No,No,Debil,Alta,Regulares,No,Buena,Extrovertido,Media,7,Buena,No,1,Publica,25,Si,No
 20,Soltero,Foráneo,79,78,4,3,11,Alto,12009,No,No,Moderado,Media,Conflictivas,Si,Buena,Introvertido,Baja,6,Regular,Si,1,Publica,24,Si,Si
@@ -1526,7 +1526,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 22,Soltero,Foráneo,45,83,3,3,0,Medio,12325,No,No,Debil,Baja,Regulares,Si,Regular,Extrovertido,Media,9,Buena,No,2,Publica,17,Si,Si
 21,Soltero,Local,65,74,6,1,6,Medio,13464,No,Si,Debil,Baja,Regulares,No,Mala,Introvertido,Media,7,Mala,No,2,Publica,9,Si,No
 21,Soltero,Local,54,90,-1,1,3,Medio,22876,No,No,Debil,Media,Regulares,Si,Mala,Extrovertido,Media,9,Regular,Si,3,Publica,34,No,Si
-22,Soltero,Local,66,77,2,2,12,Medio,6855,Si,No,Fuerte,Baja,Conflictivas,Si,Buena,Introvertido,Alta,3,Regular,No,0,Privada,-13,Si,No
+22,Soltero,Local,66,77,2,2,12,Medio,6855,Si,No,Fuerte,Baja,Conflictivas,Si,Buena,Introvertido,Alta,3,Regular,No,0,Privada,25,Si,No
 19,Soltero,Local,92,57,6,4,4,Medio,12446,No,Si,Moderado,Media,Regulares,No,Buena,Extrovertido,Media,7,Mala,Si,4,Publica,11,Si,Si
 21,Soltero,Local,77,81,6,0,11,Medio,9401,No,No,Debil,Media,Regulares,Si,Mala,Introvertido,Alta,5,Buena,Si,4,Publica,6,No,No
 21,Soltero,Local,65,88,4,1,11,Medio,7768,No,No,Moderado,Baja,Buenas,No,Regular,Introvertido,Media,6,Buena,No,0,Publica,21,Si,Si
@@ -2097,7 +2097,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 21,Soltero,Local,83,98,6,2,15,Medio,10570,No,Si,Debil,Media,Conflictivas,No,Buena,Extrovertido,Alta,8,Mala,Si,0,Publica,41,No,Si
 23,Union libre,Local,71,89,5,0,4,Medio,9837,No,Si,Moderado,Baja,Regulares,No,Buena,Introvertido,Media,5,Mala,Si,5,Publica,17,Si,Si
 24,Casado,Local,84,71,10,4,8,Medio,10112,No,No,Debil,Media,Regulares,Si,Regular,Extrovertido,Media,9,Regular,No,3,Publica,40,Si,Si
-22,Soltero,Local,93,72,6,0,6,Bajo,25557,Si,No,Moderado,Alta,Regulares,No,Regular,Introvertido,Alta,7,Regular,No,4,Publica,13,Si,No
+22,Soltero,Local,93,72,6,0,6,Bajo,11579,Si,No,Moderado,Alta,Regulares,No,Regular,Introvertido,Alta,7,Regular,No,4,Publica,13,Si,No
 21,Soltero,Local,89,89,7,0,11,Medio,8038,No,No,Debil,Alta,Regulares,Si,Buena,Introvertido,Baja,8,Buena,Si,5,Publica,23,No,No
 17,Soltero,Foráneo,86,60,8,4,4,Medio,16821,Si,No,Moderado,Baja,Conflictivas,No,Regular,Extrovertido,Baja,8,Regular,No,2,Publica,22,No,No
 23,Soltero,Foráneo,72,61,6,1,14,Medio,1478,No,No,Debil,Media,Regulares,No,Regular,Introvertido,Alta,5,Buena,No,4,Privada,16,Si,No
@@ -2120,7 +2120,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 22,Soltero,Foráneo,70,73,8,1,6,Medio,8764,No,No,Debil,Media,Regulares,No,Mala,Extrovertido,Baja,10,Regular,No,1,Publica,28,No,No
 23,Soltero,Foráneo,39,67,5,2,23,Bajo,13051,No,No,Fuerte,Media,Regulares,Si,Regular,Extrovertido,Media,7,Regular,No,1,Publica,19,Si,No
 26,Union libre,Local,87,48,4,3,8,Bajo,9062,Si,No,Debil,Baja,Buenas,Si,Buena,Extrovertido,Alta,4,Regular,Si,1,Privada,3,Si,No
-20,Soltero,Foráneo,72,74,2,2,9,Medio,-2071,No,No,Debil,Media,Buenas,Si,Mala,Introvertido,Alta,7,Regular,Si,2,Publica,52,Si,Si
+20,Soltero,Foráneo,72,74,2,2,9,Medio,11579,No,No,Debil,Media,Buenas,Si,Mala,Introvertido,Alta,7,Regular,Si,2,Publica,52,Si,Si
 23,Casado,Local,68,68,3,3,10,Medio,9715,No,No,Debil,Media,Conflictivas,No,Mala,Introvertido,Alta,8,Regular,Si,2,Publica,40,No,No
 21,Soltero,Local,78,69,8,2,1,Medio,13179,Si,No,Debil,Baja,Regulares,Si,Mala,Introvertido,Baja,7,Regular,No,0,Publica,42,No,No
 21,Casado,Foráneo,82,87,3,-1,0,Bajo,16594,No,Si,Debil,Baja,Conflictivas,Si,Mala,Introvertido,Baja,8,Buena,Si,2,Publica,31,Si,Si
@@ -2333,7 +2333,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 21,Union libre,Foráneo,76,76,4,5,10,Medio,19067,No,No,Debil,Alta,Regulares,Si,Mala,Introvertido,Baja,8,Buena,Si,0,Privada,20,Si,Si
 22,Soltero,Local,94,67,3,0,10,Medio,19846,No,Si,Debil,Media,Regulares,No,Mala,Extrovertido,Media,5,Regular,Si,1,Publica,34,No,Si
 21,Casado,Local,92,80,2,2,7,Medio,5635,No,No,Debil,Media,Regulares,Si,Buena,Extrovertido,Baja,7,Regular,No,3,Publica,32,Si,Si
-24,Casado,Local,71,81,4,1,8,Medio,-2111,No,No,Debil,Baja,Regulares,No,Mala,Introvertido,Media,8,Buena,No,0,Publica,63,Si,No
+24,Casado,Local,71,81,4,1,8,Medio,11579,No,No,Debil,Baja,Regulares,No,Mala,Introvertido,Media,8,Buena,No,0,Publica,63,Si,No
 25,Soltero,Local,58,85,-1,0,10,Medio,14090,No,No,Fuerte,Alta,Regulares,Si,Buena,Introvertido,Baja,6,Buena,No,2,Privada,26,No,Si
 19,Casado,Local,67,67,4,4,15,Medio,13193,No,No,Debil,Baja,Regulares,Si,Mala,Introvertido,Baja,8,Mala,Si,-1,Privada,47,Si,Si
 19,Soltero,Foráneo,72,73,0,3,8,Medio,11757,No,No,Debil,Media,Regulares,Si,Mala,Introvertido,Baja,9,Regular,Si,0,Privada,30,No,Si
@@ -2757,7 +2757,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 17,Union libre,Foráneo,92,92,3,1,11,Alto,8833,No,No,Debil,Baja,Regulares,Si,Mala,Extrovertido,Baja,6,Buena,Si,1,Privada,12,No,Si
 23,Union libre,Foráneo,78,68,4,1,13,Bajo,4819,No,No,Debil,Media,Regulares,Si,Buena,Extrovertido,Baja,4,Regular,Si,1,Publica,45,Si,No
 22,Soltero,Local,65,89,12,0,5,Medio,14832,Si,No,Moderado,Media,Buenas,No,Mala,Extrovertido,Alta,7,Regular,Si,0,Publica,12,No,No
-22,Soltero,Local,72,103,8,4,-2,Medio,9941,No,No,Fuerte,Media,Conflictivas,No,Regular,Extrovertido,Baja,10,Buena,Si,1,Publica,64,No,Si
+22,Soltero,Local,72,103,8,4,-2,Medio,9941,No,No,Fuerte,Media,Conflictivas,No,Regular,Extrovertido,Baja,10,Buena,Si,1,Publica,25,No,Si
 19,Casado,Local,78,76,2,-1,18,Medio,5853,No,Si,Fuerte,Media,Buenas,Si,Regular,Introvertido,Media,10,Regular,No,2,Privada,12,Si,No
 23,Soltero,Local,63,76,3,1,6,Medio,9758,Si,No,Moderado,Alta,Regulares,No,Regular,Extrovertido,Media,8,Mala,No,0,Publica,23,Si,No
 21,Casado,Local,83,88,2,6,8,Medio,15139,No,No,Debil,Alta,Conflictivas,Si,Regular,Introvertido,Media,6,Buena,Si,1,Privada,25,No,No
@@ -2798,7 +2798,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 21,Soltero,Local,75,75,6,1,10,Medio,14870,No,No,Fuerte,Baja,Regulares,Si,Buena,Extrovertido,Baja,6,Regular,No,1,Publica,16,Si,Si
 22,Soltero,Local,81,75,9,2,10,Medio,402,No,No,Debil,Alta,Regulares,Si,Mala,Introvertido,Baja,5,Regular,Si,4,Publica,20,No,No
 21,Soltero,Local,52,71,4,0,12,Bajo,12239,Si,Si,Debil,Baja,Conflictivas,Si,Buena,Extrovertido,Media,5,Buena,No,0,Privada,51,Si,Si
-22,Casado,Local,46,92,7,4,11,Medio,15501,No,Si,Moderado,Baja,Regulares,Si,Mala,Extrovertido,Baja,4,Buena,Si,4,Publica,-13,Si,No
+22,Casado,Local,46,92,7,4,11,Medio,15501,No,Si,Moderado,Baja,Regulares,Si,Mala,Extrovertido,Baja,4,Buena,Si,4,Publica,25,Si,No
 18,Union libre,Local,90,81,9,1,20,Alto,6487,Si,Si,Debil,Alta,Buenas,Si,Buena,Extrovertido,Alta,9,Regular,No,5,Publica,26,Si,Si
 16,Soltero,Foráneo,68,72,9,0,11,Medio,9214,No,No,Moderado,Media,Conflictivas,Si,Buena,Extrovertido,Alta,10,Regular,No,0,Privada,18,Si,No
 26,Casado,Foráneo,61,66,9,0,2,Medio,2800,No,No,Debil,Media,Conflictivas,Si,Regular,Introvertido,Alta,2,Regular,Si,2,Publica,-2,Si,No
@@ -2890,7 +2890,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 20,Casado,Local,94,78,3,2,6,Medio,6374,No,No,Debil,Media,Regulares,Si,Buena,Introvertido,Alta,4,Regular,Si,1,Publica,31,Si,Si
 26,Casado,Local,78,93,9,4,5,Medio,7473,Si,No,Debil,Alta,Regulares,Si,Buena,Extrovertido,Baja,8,Regular,No,2,Publica,13,Si,No
 21,Soltero,Local,52,50,8,3,4,Bajo,13559,Si,No,Moderado,Media,Regulares,Si,Buena,Introvertido,Alta,10,Mala,No,0,Privada,51,Si,No
-17,Casado,Foráneo,60,86,5,0,8,Medio,-1344,No,No,Moderado,Alta,Buenas,No,Regular,Introvertido,Baja,2,Buena,No,5,Privada,65,Si,No
+17,Casado,Foráneo,60,86,5,0,8,Medio,-1344,No,No,Moderado,Alta,Buenas,No,Regular,Introvertido,Baja,2,Buena,No,5,Privada,25,Si,No
 23,Casado,Local,75,50,5,2,7,Medio,10113,Si,No,Moderado,Baja,Conflictivas,No,Regular,Extrovertido,Alta,6,Mala,Si,2,Privada,17,No,Si
 21,Union libre,Local,80,87,3,0,0,Medio,9716,No,No,Moderado,Baja,Regulares,Si,Regular,Introvertido,Alta,6,Regular,Si,1,Publica,34,No,Si
 24,Soltero,Foráneo,62,63,5,1,9,Medio,8323,Si,No,Fuerte,Alta,Conflictivas,No,Regular,Extrovertido,Baja,9,Buena,Si,4,Publica,30,No,No
@@ -2904,7 +2904,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 19,Soltero,Foráneo,78,77,2,2,12,Medio,10006,No,No,Debil,Media,Conflictivas,Si,Buena,Extrovertido,Baja,10,Buena,Si,4,Publica,42,Si,No
 19,Soltero,Local,58,68,0,3,11,Bajo,-1759,Si,No,Debil,Media,Regulares,Si,Mala,Introvertido,Alta,6,Mala,Si,0,Privada,51,Si,Si
 21,Soltero,Foráneo,75,87,8,5,9,Bajo,1373,No,No,Debil,Media,Regulares,No,Mala,Extrovertido,Media,8,Regular,Si,2,Publica,0,Si,Si
-20,Soltero,Local,92,72,5,1,0,Bajo,18629,Si,No,Debil,Alta,Conflictivas,Si,Mala,Introvertido,Alta,3,Regular,No,1,Publica,-14,Si,Si
+20,Soltero,Local,92,72,5,1,0,Bajo,18629,Si,No,Debil,Alta,Conflictivas,Si,Mala,Introvertido,Alta,3,Regular,No,1,Publica,25,Si,Si
 19,Soltero,Local,87,84,11,1,6,Medio,10494,Si,No,Fuerte,Baja,Buenas,No,Regular,Introvertido,Baja,3,Regular,Si,4,Publica,34,No,Si
 22,Union libre,Local,95,72,3,2,11,Bajo,9137,Si,No,Fuerte,Media,Buenas,No,Regular,Introvertido,Media,7,Buena,No,2,Publica,26,Si,No
 26,Soltero,Foráneo,77,81,5,2,21,Medio,13783,No,No,Debil,Alta,Regulares,Si,Buena,Extrovertido,Media,6,Regular,Si,5,Publica,62,Si,Si
@@ -2924,7 +2924,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 23,Soltero,Local,59,71,6,2,9,Bajo,13301,No,No,Moderado,Media,Conflictivas,Si,Regular,Extrovertido,Alta,6,Buena,Si,4,Publica,38,Si,Si
 20,Casado,Foráneo,70,73,3,3,6,Medio,11399,No,No,Debil,Media,Regulares,No,Mala,Introvertido,Baja,6,Regular,No,5,Publica,52,Si,No
 21,Soltero,Local,71,60,9,2,9,Bajo,10770,Si,No,Moderado,Alta,Conflictivas,No,Mala,Extrovertido,Alta,10,Mala,Si,0,Privada,36,Si,Si
-21,Soltero,Local,57,53,7,6,8,Alto,17829,No,No,Fuerte,Alta,Conflictivas,Si,Buena,Introvertido,Baja,3,Mala,No,4,Publica,-15,Si,No
+21,Soltero,Local,57,53,7,6,8,Alto,17829,No,No,Fuerte,Alta,Conflictivas,Si,Buena,Introvertido,Baja,3,Mala,No,4,Publica,25,Si,No
 21,Union libre,Local,94,79,7,6,6,Bajo,10362,No,No,Debil,Media,Regulares,Si,Buena,Introvertido,Alta,8,Regular,Si,0,Publica,20,Si,No
 21,Union libre,Local,58,81,10,3,15,Medio,9204,Si,No,Debil,Media,Regulares,No,Regular,Introvertido,Alta,7,Mala,Si,2,Publica,9,Si,Si
 19,Soltero,Local,89,66,5,0,18,Medio,14909,Si,No,Fuerte,Alta,Regulares,No,Mala,Extrovertido,Baja,4,Regular,No,5,Privada,5,Si,No
@@ -3571,7 +3571,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 18,Soltero,Foráneo,63,97,6,1,9,Medio,13487,No,No,Debil,Media,Buenas,No,Regular,Introvertido,Baja,6,Buena,No,2,Publica,14,Si,Si
 22,Soltero,Local,75,69,2,1,10,Medio,10839,No,Si,Debil,Baja,Regulares,No,Regular,Introvertido,Media,6,Regular,No,4,Privada,29,Si,Si
 22,Casado,Foráneo,73,51,6,0,16,Medio,-245,No,Si,Debil,Media,Conflictivas,Si,Mala,Introvertido,Baja,11,Regular,Si,2,Publica,28,Si,No
-23,Casado,Foráneo,112,82,4,2,10,Medio,15913,No,No,Debil,Media,Buenas,No,Buena,Introvertido,Media,4,Regular,Si,2,Publica,-13,Si,No
+23,Casado,Foráneo,112,82,4,2,10,Medio,15913,No,No,Debil,Media,Buenas,No,Buena,Introvertido,Media,4,Regular,Si,2,Publica,25,Si,No
 20,Soltero,Local,74,96,7,4,9,Medio,8975,No,No,Moderado,Alta,Regulares,No,Buena,Extrovertido,Alta,6,Buena,Si,3,Publica,20,Si,No
 21,Union libre,Local,75,89,1,2,4,Medio,13730,Si,Si,Debil,Baja,Regulares,Si,Buena,Introvertido,Alta,6,Regular,Si,4,Publica,35,Si,Si
 21,Soltero,Local,64,72,9,2,-2,Alto,12366,No,No,Debil,Media,Regulares,Si,Buena,Extrovertido,Media,7,Buena,No,3,Privada,4,Si,No
@@ -3628,7 +3628,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 21,Soltero,Local,77,51,5,2,12,Medio,14983,Si,Si,Moderado,Baja,Buenas,Si,Buena,Extrovertido,Baja,8,Regular,No,2,Publica,22,Si,Si
 19,Soltero,Local,65,81,9,2,4,Medio,10818,No,Si,Debil,Alta,Buenas,Si,Mala,Extrovertido,Media,5,Mala,Si,3,Publica,27,Si,No
 24,Casado,Foráneo,79,79,5,3,17,Alto,15277,Si,No,Fuerte,Alta,Conflictivas,No,Mala,Introvertido,Baja,5,Buena,Si,1,Publica,31,No,No
-20,Union libre,Foráneo,88,89,4,1,7,Medio,12404,No,No,Moderado,Media,Regulares,Si,Buena,Introvertido,Alta,4,Regular,Si,1,Publica,-13,Si,Si
+20,Union libre,Foráneo,88,89,4,1,7,Medio,12404,No,No,Moderado,Media,Regulares,Si,Buena,Introvertido,Alta,4,Regular,Si,1,Publica,25,Si,Si
 22,Soltero,Foráneo,48,67,2,2,10,Alto,6024,No,No,Fuerte,Alta,Buenas,No,Regular,Extrovertido,Media,7,Mala,No,2,Publica,13,Si,Si
 21,Soltero,Local,72,75,4,2,3,Bajo,9018,No,No,Fuerte,Alta,Conflictivas,No,Buena,Extrovertido,Alta,8,Regular,Si,2,Publica,25,Si,No
 22,Soltero,Foráneo,103,51,0,0,10,Medio,8363,Si,No,Fuerte,Baja,Regulares,No,Regular,Extrovertido,Media,8,Buena,Si,5,Publica,25,Si,No
@@ -3859,7 +3859,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 21,Soltero,Local,96,77,4,3,3,Medio,11877,Si,No,Moderado,Baja,Conflictivas,No,Regular,Extrovertido,Media,5,Buena,Si,3,Publica,16,No,No
 23,Soltero,Local,81,50,3,4,11,Bajo,11520,Si,Si,Moderado,Baja,Buenas,No,Buena,Introvertido,Media,6,Buena,No,2,Privada,27,Si,Si
 19,Soltero,Local,74,72,6,2,5,Medio,8877,No,No,Moderado,Baja,Regulares,No,Regular,Extrovertido,Baja,7,Regular,Si,0,Publica,26,Si,Si
-23,Union libre,Foráneo,105,82,4,2,8,Medio,4254,Si,No,Debil,Media,Regulares,Si,Mala,Extrovertido,Alta,7,Buena,No,0,Publica,64,Si,No
+23,Union libre,Foráneo,105,82,4,2,8,Medio,4254,Si,No,Debil,Media,Regulares,Si,Mala,Extrovertido,Alta,7,Buena,No,0,Publica,25,Si,No
 19,Union libre,Foráneo,85,77,6,1,9,Medio,9723,No,No,Fuerte,Media,Conflictivas,Si,Mala,Introvertido,Media,4,Regular,No,1,Privada,17,No,Si
 18,Soltero,Local,80,89,10,2,17,Alto,18700,No,No,Fuerte,Media,Regulares,Si,Regular,Introvertido,Media,8,Regular,Si,0,Privada,42,Si,No
 21,Soltero,Local,75,66,6,0,18,Medio,12578,Si,No,Moderado,Baja,Regulares,No,Regular,Extrovertido,Alta,7,Mala,Si,4,Publica,28,Si,No
@@ -3874,7 +3874,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 19,Soltero,Local,77,60,8,4,8,Bajo,4337,Si,No,Moderado,Baja,Conflictivas,Si,Mala,Extrovertido,Media,3,Regular,Si,4,Privada,31,No,No
 22,Soltero,Local,96,70,0,1,7,Medio,17938,No,No,Moderado,Alta,Conflictivas,Si,Regular,Extrovertido,Alta,7,Regular,No,2,Publica,8,No,Si
 23,Soltero,Local,66,85,5,3,20,Medio,13091,No,Si,Debil,Media,Conflictivas,Si,Buena,Extrovertido,Alta,4,Regular,Si,2,Publica,18,Si,Si
-20,Union libre,Foráneo,74,78,4,0,6,Bajo,13157,Si,Si,Fuerte,Media,Regulares,No,Regular,Extrovertido,Alta,6,Mala,Si,2,Publica,64,No,Si
+20,Union libre,Foráneo,74,78,4,0,6,Bajo,13157,Si,Si,Fuerte,Media,Regulares,No,Regular,Extrovertido,Alta,6,Mala,Si,2,Publica,25,No,Si
 22,Casado,Local,50,71,7,4,17,Medio,19514,No,No,Debil,Alta,Regulares,No,Mala,Extrovertido,Baja,3,Buena,No,1,Privada,20,Si,Si
 25,Soltero,Local,57,72,8,4,8,Medio,22110,Si,Si,Debil,Baja,Buenas,Si,Regular,Extrovertido,Baja,8,Regular,Si,4,Publica,18,Si,Si
 18,Soltero,Local,56,93,3,1,6,Medio,16034,No,No,Moderado,Media,Conflictivas,Si,Regular,Introvertido,Alta,9,Buena,Si,0,Privada,26,Si,Si
@@ -4088,7 +4088,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 22,Casado,Local,62,85,3,5,0,Medio,10683,No,No,Debil,Media,Regulares,Si,Regular,Introvertido,Alta,7,Regular,Si,2,Privada,26,Si,Si
 18,Casado,Foráneo,70,79,5,1,16,Medio,8543,Si,No,Debil,Media,Regulares,Si,Regular,Introvertido,Baja,7,Buena,Si,2,Publica,31,Si,Si
 20,Soltero,Local,59,76,12,4,16,Medio,15992,No,Si,Debil,Alta,Regulares,No,Regular,Introvertido,Alta,8,Regular,No,2,Publica,35,Si,Si
-22,Union libre,Foráneo,67,41,0,0,9,Alto,11876,No,Si,Debil,Baja,Regulares,Si,Mala,Introvertido,Baja,8,Regular,No,2,Publica,-15,No,No
+22,Union libre,Foráneo,67,41,0,0,9,Alto,11876,No,Si,Debil,Baja,Regulares,Si,Mala,Introvertido,Baja,8,Regular,No,2,Publica,25,No,No
 21,Soltero,Local,98,77,3,3,11,Medio,16110,No,No,Moderado,Media,Conflictivas,Si,Buena,Introvertido,Baja,8,Regular,Si,4,Publica,21,Si,No
 20,Casado,Local,96,71,5,2,4,Medio,19221,Si,No,Fuerte,Media,Regulares,No,Buena,Extrovertido,Media,5,Buena,No,2,Publica,9,Si,Si
 23,Soltero,Local,57,80,6,2,13,Medio,22519,No,No,Debil,Alta,Regulares,Si,Regular,Introvertido,Alta,9,Regular,Si,4,Publica,8,Si,No
@@ -4150,7 +4150,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 19,Soltero,Local,68,69,5,2,18,Medio,612,No,Si,Moderado,Media,Regulares,No,Mala,Introvertido,Baja,4,Buena,Si,0,Publica,47,Si,Si
 19,Soltero,Local,76,49,8,0,13,Alto,16445,No,Si,Moderado,Alta,Conflictivas,No,Mala,Extrovertido,Media,6,Buena,Si,1,Privada,12,No,Si
 19,Soltero,Local,83,91,8,0,5,Medio,16355,No,No,Debil,Alta,Buenas,No,Mala,Introvertido,Baja,9,Regular,Si,2,Publica,36,No,No
-19,Soltero,Local,72,79,5,1,11,Medio,17852,Si,No,Debil,Media,Regulares,Si,Buena,Introvertido,Alta,2,Buena,No,1,Publica,-13,No,Si
+19,Soltero,Local,72,79,5,1,11,Medio,17852,Si,No,Debil,Media,Regulares,Si,Buena,Introvertido,Alta,2,Buena,No,1,Publica,25,No,Si
 22,Union libre,Local,60,71,9,1,8,Medio,16093,Si,No,Debil,Media,Conflictivas,Si,Regular,Introvertido,Media,7,Regular,Si,3,Privada,49,Si,No
 20,Soltero,Local,89,74,6,3,9,Bajo,8719,Si,No,Debil,Media,Regulares,Si,Buena,Extrovertido,Media,4,Buena,No,2,Publica,46,Si,Si
 19,Soltero,Local,73,63,-1,0,4,Medio,13216,No,No,Fuerte,Baja,Conflictivas,Si,Regular,Introvertido,Baja,7,Buena,Si,1,Publica,21,Si,Si
@@ -4491,7 +4491,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 22,Union libre,Local,93,62,3,4,11,Medio,13314,Si,Si,Moderado,Media,Conflictivas,Si,Regular,Extrovertido,Media,6,Mala,Si,3,Publica,18,Si,Si
 20,Union libre,Local,73,76,8,3,0,Medio,11957,No,No,Debil,Media,Regulares,Si,Regular,Extrovertido,Baja,7,Regular,Si,3,Privada,39,Si,Si
 17,Union libre,Local,81,80,7,4,4,Medio,15465,No,Si,Debil,Media,Regulares,No,Mala,Extrovertido,Baja,8,Regular,Si,0,Privada,32,Si,Si
-22,Soltero,Local,54,92,3,3,8,Medio,-2190,No,No,Debil,Media,Buenas,Si,Mala,Introvertido,Alta,3,Regular,Si,0,Privada,52,Si,Si
+22,Soltero,Local,54,92,3,3,8,Medio,11579,No,No,Debil,Media,Buenas,Si,Mala,Introvertido,Alta,3,Regular,Si,0,Privada,52,Si,Si
 20,Soltero,Local,76,72,8,2,9,Medio,9951,Si,No,Debil,Media,Buenas,No,Regular,Introvertido,Media,9,Mala,No,5,Publica,23,No,No
 19,Casado,Local,50,75,12,3,11,Medio,14631,Si,No,Debil,Baja,Conflictivas,Si,Regular,Introvertido,Baja,5,Buena,Si,4,Publica,21,Si,No
 26,Soltero,Foráneo,59,63,5,2,12,Medio,10444,No,No,Debil,Baja,Conflictivas,Si,Mala,Extrovertido,Media,6,Mala,Si,3,Publica,7,Si,No
@@ -4501,7 +4501,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 16,Casado,Local,88,84,6,2,16,Medio,13583,No,No,Debil,Media,Regulares,No,Buena,Extrovertido,Baja,7,Regular,Si,2,Privada,25,No,Si
 21,Soltero,Local,85,66,2,4,8,Medio,18453,No,No,Debil,Baja,Buenas,No,Regular,Introvertido,Alta,7,Mala,Si,1,Publica,39,No,Si
 19,Casado,Local,56,71,7,2,18,Medio,11344,No,No,Debil,Baja,Conflictivas,Si,Regular,Introvertido,Baja,8,Regular,Si,4,Publica,2,No,Si
-21,Casado,Foráneo,87,78,6,0,17,Medio,13579,No,Si,Fuerte,Media,Regulares,No,Regular,Extrovertido,Baja,9,Regular,Si,4,Publica,-13,No,Si
+21,Casado,Foráneo,87,78,6,0,17,Medio,13579,No,Si,Fuerte,Media,Regulares,No,Regular,Extrovertido,Baja,9,Regular,Si,4,Publica,25,No,Si
 19,Soltero,Local,38,52,7,2,7,Medio,14290,Si,No,Fuerte,Media,Conflictivas,Si,Regular,Extrovertido,Media,8,Regular,Si,2,Publica,48,Si,Si
 23,Soltero,Local,59,68,9,0,1,Medio,19337,Si,No,Debil,Media,Conflictivas,Si,Regular,Introvertido,Baja,9,Regular,Si,6,Publica,20,Si,No
 22,Soltero,Local,66,63,2,1,10,Medio,23985,Si,Si,Debil,Media,Conflictivas,Si,Mala,Introvertido,Media,4,Buena,Si,0,Publica,36,Si,Si
@@ -4720,7 +4720,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 17,Soltero,Local,76,74,5,0,5,Bajo,14734,Si,No,Fuerte,Media,Buenas,Si,Buena,Introvertido,Media,2,Regular,Si,0,Privada,16,Si,No
 23,Soltero,Local,74,78,8,1,14,Bajo,6249,Si,Si,Debil,Media,Conflictivas,Si,Regular,Introvertido,Baja,6,Buena,No,3,Publica,0,No,Si
 21,Soltero,Local,58,46,0,1,5,Medio,17776,Si,No,Fuerte,Baja,Regulares,Si,Buena,Introvertido,Media,6,Regular,Si,-1,Publica,20,No,No
-24,Union libre,Local,81,86,8,0,1,Medio,25585,Si,No,Moderado,Baja,Conflictivas,Si,Regular,Extrovertido,Media,5,Mala,No,0,Privada,6,Si,Si
+24,Union libre,Local,81,86,8,0,1,Medio,11579,Si,No,Moderado,Baja,Conflictivas,Si,Regular,Extrovertido,Media,5,Mala,No,0,Privada,6,Si,Si
 23,Casado,Local,81,91,1,4,22,Medio,15939,Si,No,Debil,Media,Regulares,No,Mala,Introvertido,Alta,4,Regular,Si,0,Privada,-7,No,No
 22,Union libre,Foráneo,112,78,8,3,11,Bajo,5359,Si,No,Debil,Baja,Regulares,Si,Regular,Extrovertido,Baja,6,Buena,No,4,Publica,42,Si,No
 22,Soltero,Local,73,73,4,0,16,Medio,15204,Si,No,Debil,Baja,Regulares,Si,Mala,Introvertido,Media,6,Mala,Si,3,Publica,14,Si,No
@@ -4874,7 +4874,7 @@ edad,estado_civil,lugar_residencia,calificaciones,asistencia_a_clases,semestre_a
 19,Casado,Local,78,84,6,3,22,Medio,12757,Si,No,Fuerte,Media,Regulares,No,Regular,Introvertido,Alta,7,Buena,Si,1,Publica,38,Si,Si
 18,Soltero,Local,83,62,1,2,7,Bajo,16163,Si,No,Fuerte,Media,Buenas,Si,Buena,Extrovertido,Alta,7,Buena,Si,3,Publica,15,No,No
 23,Soltero,Foráneo,72,82,7,2,9,Medio,7912,Si,No,Fuerte,Alta,Conflictivas,Si,Mala,Introvertido,Alta,5,Buena,Si,2,Publica,23,Si,Si
-23,Soltero,Local,80,64,5,5,10,Medio,12817,Si,No,Fuerte,Media,Regulares,Si,Buena,Introvertido,Baja,5,Regular,Si,3,Publica,64,Si,Si
+23,Soltero,Local,80,64,5,5,10,Medio,12817,Si,No,Fuerte,Media,Regulares,Si,Buena,Introvertido,Baja,5,Regular,Si,3,Publica,25,Si,Si
 20,Soltero,Foráneo,88,96,8,2,6,Medio,8339,Si,Si,Debil,Baja,Conflictivas,Si,Mala,Extrovertido,Alta,5,Regular,No,1,Privada,23,No,No
 21,Soltero,Local,78,62,7,1,5,Medio,15855,No,No,Debil,Baja,Conflictivas,Si,Mala,Extrovertido,Media,9,Regular,No,0,Publica,50,Si,Si
 21,Soltero,Local,75,63,7,2,4,Medio,6148,Si,Si,Moderado,Media,Regulares,Si,Regular,Extrovertido,Media,7,Mala,Si,-2,Publica,22,Si,No
