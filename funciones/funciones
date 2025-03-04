@@ -1,0 +1,984 @@
+def f_cargar_datos(ruta_archivo, tipo='csv', hoja_excel=None, separador=','):
+    """
+    Carga datos desde un archivo especificado.
+
+    Parámetros:
+    - ruta_archivo (str): Ruta del archivo a cargar.
+    - tipo (str): Tipo de archivo a cargar ('csv', 'excel', 'txt'). Por defecto es 'csv'.
+    - hoja_excel (str): Nombre o índice de la hoja, en caso de ser un archivo Excel. Por defecto es None.
+    - separador (str): Separador para archivos de texto o CSV. Por defecto es ','.
+
+    Retorna:
+    - DataFrame: Un DataFrame con los datos cargados.
+    """
+    try:
+        if tipo == 'csv':
+            datos = pd.read_csv(ruta_archivo, sep=separador)
+        elif tipo == 'excel':
+            datos = pd.read_excel(ruta_archivo, sheet_name=hoja_excel)
+        elif tipo == 'txt':
+            datos = pd.read_csv(ruta_archivo, sep=separador)
+        else:
+            raise ValueError("El tipo de archivo no es soportado. Use 'csv', 'excel' o 'txt'.")
+
+        print("Datos cargados correctamente.")
+        return datos
+
+    except FileNotFoundError:
+        print(f"Error: El archivo '{ruta_archivo}' no se encontró.")
+    except Exception as e:
+        print(f"Ocurrió un error al cargar los datos: {e}")
+
+
+def f_eliminar_columnas(datos, columnas):
+    """
+    Elimina las columnas especificadas de un DataFrame.
+
+    Parámetros:
+    - datos (DataFrame): El DataFrame de entrada.
+    - columnas (list): Lista de nombres de columnas a eliminar.
+
+    Retorna:
+    - DataFrame: El DataFrame sin las columnas especificadas.
+    """
+    try:
+        # Verificar si todas las columnas existen
+        columnas_existentes = [col for col in columnas if col in datos.columns]
+        if not columnas_existentes:
+            print("Ninguna de las columnas especificadas existe en el DataFrame.")
+            return datos
+
+        # Eliminar las columnas especificadas
+        datos_actualizado = datos.drop(columns=columnas_existentes)
+        print(f"Columnas eliminadas correctamente: {columnas_existentes}")
+        return datos_actualizado
+
+    except Exception as e:
+        print(f"Error al eliminar las columnas: {e}")
+        return datos
+
+
+def f_tabla_frecuencia(datos, columna):
+    """
+    Genera una tabla de frecuencias para datos cualitativos.
+
+    Parámetros:
+    - datos (DataFrame): El DataFrame de entrada.
+    - columna (str): El nombre de la columna cualitativa a analizar.
+
+    Retorna:
+    - DataFrame: Tabla de frecuencias con columnas de frecuencia absoluta, relativa y acumulada.
+    """
+    try:
+        # Contar frecuencias absolutas
+        frecuencia = datos[columna].value_counts().reset_index()
+        frecuencia.columns = [columna, 'Frecuencia_Absoluta']
+
+        # Calcular frecuencia relativa y porcentual
+        total = frecuencia['Frecuencia_Absoluta'].sum()
+        frecuencia['Frecuencia_Relativa'] = frecuencia['Frecuencia_Absoluta'] / total
+        frecuencia['Frecuencia_Porcentual'] = frecuencia['Frecuencia_Relativa'] * 100
+
+        # Calcular frecuencias acumuladas
+        frecuencia['Frecuencia_Acumulada'] = frecuencia['Frecuencia_Absoluta'].cumsum()
+        frecuencia['Frecuencia_Porcentual_Acumulada'] = frecuencia['Frecuencia_Porcentual'].cumsum()
+
+        return frecuencia
+
+    except KeyError:
+        print(f"Error: La columna '{columna}' no existe en el DataFrame.")
+    except Exception as e:
+        print(f"Ocurrió un error: {e}")
+
+def f_histograma(datos, variable, barras=10):
+    # Convertir la variable a un array para cálculos estadísticos
+    valores = np.array(datos[variable])
+
+    # Calcular medidas estadísticas
+    media = np.mean(valores)
+    mediana = np.median(valores)
+    # moda = stats.mode(valores)[0][0]
+
+    # Crear el histograma
+    plt.figure(figsize=(8, 6))
+    plt.hist(valores, bins=barras, color='skyblue', edgecolor='black', alpha=0.7)
+    plt.axvline(media, color='red', linestyle='--', label=f'Media: {media:.2f}')
+    plt.axvline(mediana, color='green', linestyle='--', label=f'Mediana: {mediana:.2f}')
+    # plt.axvline(moda, color='blue', linestyle='--', label=f'Moda: {moda:.2f}')
+
+    # Etiquetas y título
+    plt.title('Histograma con Media, Mediana')
+    plt.xlabel('Valor')
+    plt.ylabel('Frecuencia')
+    plt.legend()
+    plt.show()
+
+def f_barra(datos, variable, color='lightblue', mostrar='primeros'):
+    # Contar la frecuencia de cada categoría
+    frecuencias = datos[variable].value_counts()
+
+    # Verificar cuántas categorías hay
+    if len(frecuencias) > 10:
+        if mostrar == 'primeros':
+            frecuencias = frecuencias.head(10)  # Primeras 10 categorías
+        elif mostrar == 'ultimos':
+            frecuencias = frecuencias.tail(10)  # Últimas 10 categorías
+
+    # Crear el diagrama de barras
+    plt.figure(figsize=(8, 6))
+    barras = plt.bar(frecuencias.index, frecuencias.values, color=color, edgecolor='black', alpha=0.7)
+
+    # Agregar etiquetas y título
+    plt.xlabel('Categorías')
+    plt.ylabel('Frecuencia')
+    plt.title(f'Diagrama de Barras de {variable} (Mostrando {mostrar} 10)')
+    plt.xticks(rotation=45, ha='right')  # Rotar etiquetas para mejor visualización si son largas
+
+    # Mostrar valores encima de cada barra
+    for barra in barras:
+        plt.text(barra.get_x() + barra.get_width() / 2, barra.get_height(),
+                 f'{int(barra.get_height())}', ha='center', va='bottom', fontsize=10)
+
+    # Mostrar el gráfico
+    plt.show()
+
+# función para ver diagrmas de barras multiples variables
+def f_barra_multiple_matriz(datos, variables=None, color='lightblue', mostrar='primeros'):
+    # Obtener columnas categóricas si no se especificaron
+    if variables is None:
+        variables = datos.select_dtypes(include=['object', 'category']).columns.tolist()
+
+    # Verificar si hay variables categóricas
+    if not variables:
+        print("No hay variables categóricas para graficar.")
+        return
+
+    # Determinar la disposición de la matriz según el número de columnas categóricas
+    num_columnas = len(variables)
+    if num_columnas <= 4:
+        filas, columnas = 2, 2
+    elif num_columnas <= 9:
+        filas, columnas = 3, 3
+    elif num_columnas <= 16:
+        filas, columnas = 4, 4
+    else:
+        columnas = 4
+        filas = math.ceil(num_columnas / columnas)
+
+    # Crear la figura y subplots
+    fig, axes = plt.subplots(filas, columnas, figsize=(columnas * 5, filas * 4))
+    axes = axes.flatten()  # Convertir los ejes en una lista para indexar fácilmente
+
+    # Validar el argumento 'mostrar'
+    if mostrar not in ['primeros', 'ultimos']:
+        mostrar = 'primeros'
+
+    # Generar gráficos
+    for i, variable in enumerate(variables):
+        if i >= len(axes):  # Prevenir error de índice en subplots
+            break
+
+        # Contar la frecuencia de cada categoría
+        frecuencias = datos[variable].value_counts()
+        total = frecuencias.sum()
+        porcentajes = (frecuencias / total) * 100  # Convertir a porcentaje
+
+        # Mostrar solo las primeras o últimas 10 categorías si hay más de 10
+        if len(frecuencias) > 10:
+            if mostrar == 'primeros':
+                frecuencias = frecuencias.head(10)
+                porcentajes = porcentajes.head(10)
+            elif mostrar == 'ultimos':
+                frecuencias = frecuencias.tail(10)
+                porcentajes = porcentajes.tail(10)
+
+        # Dibujar el diagrama de barras en el subplot correspondiente
+        axes[i].bar(frecuencias.index, frecuencias.values, color=color, edgecolor='black', alpha=0.7)
+        axes[i].set_title(f'{variable}')
+        axes[i].set_xlabel('Categorías')
+        axes[i].set_ylabel('Frecuencia')
+        axes[i].tick_params(axis='x', rotation=45)
+
+        # Mostrar valores como porcentajes sobre las barras
+        for j, (valor, porcentaje) in enumerate(zip(frecuencias.values, porcentajes)):
+            axes[i].text(j, valor, f'{porcentaje:.1f}%', ha='center', va='bottom', fontsize=8)
+
+    # Ocultar subplots vacíos
+    for ax in axes[num_columnas:]:
+        ax.axis('off')
+
+    plt.tight_layout()
+    plt.show()
+
+
+
+
+# Función que visualiza múltiples histogramas de variables numéricas
+def f_histograma_multiple_matriz(datos, columnas=None, bins=10, color='skyblue'):
+    """
+    Genera múltiples histogramas organizados en una matriz dependiendo del número de variables numéricas seleccionadas.
+
+    Parámetros:
+    datos (pd.DataFrame): DataFrame que contiene los datos.
+    columnas (list or None): Lista de columnas a graficar. Si es None, selecciona todas las columnas numéricas.
+    bins (int): Número de intervalos para los histogramas.
+    color (str): Color de los histogramas.
+
+    Retorno:
+    Visualiza múltiples histogramas organizados automáticamente.
+    """
+    # Si no se especifican columnas, selecciona todas las numéricas
+    if columnas is None:
+        columnas = datos.select_dtypes(include=['number']).columns.tolist()
+
+    # Determinar el número de filas y columnas (3 o 4 columnas dependiendo del número de variables)
+    n_vars = len(columnas)
+    n_cols = 4 if n_vars > 6 else 3  # Si hay más de 6 variables, usa 4 columnas
+    n_rows = math.ceil(n_vars / n_cols)  # Calcular el número de filas necesarias
+
+    # Configuración de subplots
+    fig, axes = plt.subplots(nrows=n_rows, ncols=n_cols, figsize=(5 * n_cols, 4 * n_rows))
+    axes = axes.flatten()  # Aplanar para fácil iteración
+
+    # Graficar cada variable
+    for i, variable in enumerate(columnas):
+        axes[i].hist(datos[variable].dropna(), bins=bins, color=color, edgecolor='black', alpha=0.7)
+        axes[i].set_title(f'Histograma de {variable}')
+        axes[i].set_xlabel(variable)
+        axes[i].set_ylabel('Frecuencia')
+
+    # Eliminar subplots vacíos si hay menos gráficos que subplots
+    for j in range(i + 1, len(axes)):
+        fig.delaxes(axes[j])
+
+    plt.tight_layout()
+    plt.show()
+
+
+# Función para graficar varios diagrmas de caja de variables numéricas
+def f_diagrama_caja_matriz(datos, columnas=None):
+    """
+    Genera múltiples diagramas de caja organizados en una matriz de hasta 4 por fila.
+
+    Parámetros:
+    datos (pd.DataFrame): DataFrame con las variables numéricas.
+    columnas (list or None): Lista de columnas a graficar. Si es None, selecciona todas las numéricas.
+
+    Salida:
+    Muestra diagramas de caja organizados automáticamente.
+    """
+    # Si no se especifican columnas, selecciona todas las numéricas
+    if columnas is None:
+        columnas = datos.select_dtypes(include=['number']).columns.tolist()
+
+    # Número total de variables a graficar
+    n_vars = len(columnas)
+
+    # Determinar número de filas y columnas (máximo 4 columnas por fila)
+    n_cols = 4  # Fijamos el máximo en 4 columnas por fila
+    n_rows = math.ceil(n_vars / n_cols)  # Calculamos las filas necesarias
+
+    # Crear la figura y los subplots
+    fig, axes = plt.subplots(nrows=n_rows, ncols=n_cols, figsize=(5 * n_cols, 4 * n_rows))
+    axes = axes.flatten()  # Aplanar la matriz de subplots para iterar fácilmente
+
+    # Graficar cada variable numérica
+    for i, variable in enumerate(columnas):
+        datos_var = datos[variable].dropna().values  # Eliminar valores NaN
+
+        # Crear diagrama de caja
+        axes[i].boxplot(datos_var, vert=False, patch_artist=True, boxprops=dict(facecolor="skyblue"))
+        axes[i].set_title(f'Diagrama de Caja de {variable}')
+        axes[i].set_xlabel('Valor')
+
+        # Calcular cuartiles
+        q1, q2, q3 = np.percentile(datos_var, [25, 50, 75])
+
+        # Dibujar líneas de cuartiles
+        axes[i].axvline(x=q1, color='blue', linestyle='--', linewidth=1, alpha=0.7, label=f'Q1: {q1:.2f}')
+        axes[i].axvline(x=q2, color='red', linestyle='--', linewidth=1, alpha=0.7, label=f'Mediana: {q2:.2f}')
+        axes[i].axvline(x=q3, color='blue', linestyle='--', linewidth=1, alpha=0.7, label=f'Q3: {q3:.2f}')
+
+        axes[i].legend(fontsize=8)
+
+    # Eliminar subplots vacíos si hay menos gráficos que subplots
+    for j in range(i + 1, len(axes)):
+        fig.delaxes(axes[j])
+
+    plt.tight_layout()
+    plt.show()
+
+
+## Funciones para transformar datos
+# Definir la función que convierte una lista o arreglo a valores numéricos
+def f_convertir_numeros(valores):
+    # Convertir los valores a numéricos, forzando los no convertibles a NaN
+    numericos = pd.to_numeric(valores, errors='coerce')
+    return numericos
+
+# Definen una función que convierte valores numéricos a valores absolutos
+def f_convertir_absoluto (valores):
+  return np.abs(valores)
+
+# Función median con pandas la función median()
+def f_mediana(valores):
+  # Mediana excluyendo
+  mediana = valores.median()
+  return mediana
+
+def f_convertir_mediana(valores):
+    # Convertir la entrada a una Serie de Pandas si no lo es
+    if not isinstance(valores, pd.Series):
+        valores = pd.Series(valores)
+
+    # Convertir todos los valores a numéricos, forzando los no convertibles a NaN
+    valores_numericos = pd.to_numeric(valores, errors='coerce')
+
+    # Calcular la mediana de los valores numéricos, excluyendo los NaN
+    mediana = valores_numericos.median()
+
+    # Reemplazar los NaN con la mediana
+    numeros = valores_numericos.fillna(mediana)
+
+    return numeros
+
+
+# Función que determina cuartiles
+def f_cuartiles_quantile(datos):
+  q1 = np.percentile(datos, 25)
+  q2 = np.percentile(datos, 50)
+  q3 = np.percentile(datos, 75)
+  return q1, q2, q3
+
+# Función que construye diagrama de caja
+def f_diagrama_caja (datos, contexto):
+  plt.boxplot(datos, vert=False)
+  plt.xlabel(contexto)
+  plt.ylabel('Valor')
+  plt.title('Diagrama de Caja')
+
+  # Calculando cuartiles d ela funci´pn previamente creada
+  q1, q2, q3= f_cuartiles_quantile(datos)
+  # Añadir leyendas para los cuartiles
+  plt.axvline(x=q1, color='blue', linestyle='--', linewidth=1, label=f'Q1: {q1:.2f}')
+  plt.axvline(x=q2, color='blue', linestyle='--', linewidth=1, label=f'Q2:Mediana: {q2:.2f}')
+  plt.axvline(x=q3, color='blue', linestyle='--', linewidth=1, label=f'Q3: {q3:.2f}')
+
+  # Añadir leyenda adicional
+  plt.legend()
+
+  plt.show()
+
+# Funcíon para modificar atípicos por la mediana
+# Se hacen varias iteraciones al menos una para
+# eliminar porque tal vez sigan quedando y esto garantiza quitarlos.
+def f_modificar_atipicos(datos, max_iter=10):
+    """
+    Reemplaza los valores atípicos en una serie de datos por la mediana utilizando
+    el criterio del rango intercuartil (IQR). Se ejecuta de manera iterativa
+    hasta que no haya valores atípicos o se alcance el máximo de iteraciones.
+
+    Parámetros:
+    datos (pd.Series o np.array): Datos a procesar.
+    max_iter (int): Número máximo de iteraciones para eliminar atípicos.
+
+    Retorna:
+    np.array o pd.Series: Datos con valores atípicos reemplazados por la mediana.
+    """
+
+    datos = np.array(datos)  # Convertir a array para manipulación
+    iter_count = 0  # Contador de iteraciones
+
+    while iter_count < max_iter:
+        q1 = np.percentile(datos, 25)
+        q3 = np.percentile(datos, 75)
+        RI = q3 - q1  # Rango intercuartílico
+        limite_inferior = q1 - 1.5 * RI
+        limite_superior = q3 + 1.5 * RI
+        mediana = np.median(datos)  # Calcular la mediana
+
+        # Identificar valores atípicos
+        atipicos = (datos < limite_inferior) | (datos > limite_superior)
+
+        # Si ya no hay valores atípicos, terminamos
+        if not np.any(atipicos):
+            break
+
+        # Reemplazar valores atípicos con la mediana
+        datos[atipicos] = mediana
+        iter_count += 1  # Incrementar contador de iteraciones
+
+    return datos
+
+
+# Convertir todos los valores a mayúsculas para estandarizar la columna.
+def f_convertir_MAYUSCULAS(valores):
+  # 1. Convertir todos los valores a mayúsculas
+  valores = valores.str.upper()
+  return valores
+
+# Función para convertir primera MAYUSCULA y resto minúscula
+def f_convertir_MAYUSCULAS_minusculas(valores):
+    # Convertir la primera letra de cada palabra a mayúscula y el resto a minúscula
+    valores = valores.str.capitalize()
+    return valores
+
+def f_reemplazar_generos_moda (valores):
+  moda_generos = valores.mode()[0]
+
+  valores.fillna(moda_generos, inplace=True)
+
+  return valores
+
+# Función que debe modifiar un valor de acuerdo a la cadena que mas se le parezca
+def f_modificar_inicial (valores):
+  # Mapear cualquier valor que sea claramente 'M' o 'F' a 'MASCULINO' o 'FEMENINO'
+  valores = valores.replace({'M': 'MASCULINO', 'F': 'FEMENINO'})
+
+  # Debe identificar los valores únicos los dos que mas se repitan
+  # por ejemplo FEMENINO Y MASCULINO
+  # De cada valor si hay una ler F es FEMENINO
+  # De cada valor si hay una ler M es MASCULINO
+  # De cada valor si se parece por ejemplo GEMENINO se parece a FEMENINO
+  # De cada valor si se parece por ejemplo SASCULINO se parece a MASCULINO
+  return valores
+
+
+
+# Función que modifica valores similares
+def f_modificar_parecidos(valores, opciones=['FEMENINO', 'MASCULINO'], umbral=50):
+    """
+    Estandariza los valores de género en una lista o columna de DataFrame a 'FEMENINO' o 'MASCULINO' basado en la similitud.
+
+    Parámetros:
+    - valores: Una lista o Serie de pandas con los valores de género a estandarizar.
+    - opciones: Una lista de valores aceptados a los que se intentará hacer coincidir los valores.
+    - umbral: El umbral de coincidencia para considerar una equivalencia (0-100).
+
+    Retorna:
+    Una lista o Serie de pandas con los valores estandarizados.
+    """
+    # Función para estandarizar un único valor
+    def estandarizar_valor(valor):
+        if valor is None:  # Verifica si el valor es None antes de proceder
+            return valor
+        mejor_coincidencia, puntaje = process.extractOne(valor.upper(), opciones)
+        return mejor_coincidencia if puntaje > umbral else valor
+
+    # Aplicar la estandarización a cada valor en la lista o Serie
+    if isinstance(valores, pd.Series):
+        return valores.apply(estandarizar_valor)
+    else:
+        return [estandarizar_valor(valor) for valor in valores]
+
+# Función para escalar
+def f_cargar_datos(ruta_archivo, tipo='csv', hoja_excel=None, separador=','):
+    """
+    Carga datos desde un archivo especificado.
+
+    Parámetros:
+    - ruta_archivo (str): Ruta del archivo a cargar.
+    - tipo (str): Tipo de archivo a cargar ('csv', 'excel', 'txt'). Por defecto es 'csv'.
+    - hoja_excel (str): Nombre o índice de la hoja, en caso de ser un archivo Excel. Por defecto es None.
+    - separador (str): Separador para archivos de texto o CSV. Por defecto es ','.
+
+    Retorna:
+    - DataFrame: Un DataFrame con los datos cargados.
+    """
+    try:
+        if tipo == 'csv':
+            datos = pd.read_csv(ruta_archivo, sep=separador)
+        elif tipo == 'excel':
+            datos = pd.read_excel(ruta_archivo, sheet_name=hoja_excel)
+        elif tipo == 'txt':
+            datos = pd.read_csv(ruta_archivo, sep=separador)
+        else:
+            raise ValueError("El tipo de archivo no es soportado. Use 'csv', 'excel' o 'txt'.")
+
+        print("Datos cargados correctamente.")
+        return datos
+
+    except FileNotFoundError:
+        print(f"Error: El archivo '{ruta_archivo}' no se encontró.")
+    except Exception as e:
+        print(f"Ocurrió un error al cargar los datos: {e}")
+
+
+def f_eliminar_columnas(datos, columnas):
+    """
+    Elimina las columnas especificadas de un DataFrame.
+
+    Parámetros:
+    - datos (DataFrame): El DataFrame de entrada.
+    - columnas (list): Lista de nombres de columnas a eliminar.
+
+    Retorna:
+    - DataFrame: El DataFrame sin las columnas especificadas.
+    """
+    try:
+        # Verificar si todas las columnas existen
+        columnas_existentes = [col for col in columnas if col in datos.columns]
+        if not columnas_existentes:
+            print("Ninguna de las columnas especificadas existe en el DataFrame.")
+            return datos
+
+        # Eliminar las columnas especificadas
+        datos_actualizado = datos.drop(columns=columnas_existentes)
+        print(f"Columnas eliminadas correctamente: {columnas_existentes}")
+        return datos_actualizado
+
+    except Exception as e:
+        print(f"Error al eliminar las columnas: {e}")
+        return datos
+
+
+def f_tabla_frecuencia(datos, columna):
+    """
+    Genera una tabla de frecuencias para datos cualitativos.
+
+    Parámetros:
+    - datos (DataFrame): El DataFrame de entrada.
+    - columna (str): El nombre de la columna cualitativa a analizar.
+
+    Retorna:
+    - DataFrame: Tabla de frecuencias con columnas de frecuencia absoluta, relativa y acumulada.
+    """
+    try:
+        # Contar frecuencias absolutas
+        frecuencia = datos[columna].value_counts().reset_index()
+        frecuencia.columns = [columna, 'Frecuencia_Absoluta']
+
+        # Calcular frecuencia relativa y porcentual
+        total = frecuencia['Frecuencia_Absoluta'].sum()
+        frecuencia['Frecuencia_Relativa'] = frecuencia['Frecuencia_Absoluta'] / total
+        frecuencia['Frecuencia_Porcentual'] = frecuencia['Frecuencia_Relativa'] * 100
+
+        # Calcular frecuencias acumuladas
+        frecuencia['Frecuencia_Acumulada'] = frecuencia['Frecuencia_Absoluta'].cumsum()
+        frecuencia['Frecuencia_Porcentual_Acumulada'] = frecuencia['Frecuencia_Porcentual'].cumsum()
+
+        return frecuencia
+
+    except KeyError:
+        print(f"Error: La columna '{columna}' no existe en el DataFrame.")
+    except Exception as e:
+        print(f"Ocurrió un error: {e}")
+
+def f_histograma(datos, variable, barras=10):
+    # Convertir la variable a un array para cálculos estadísticos
+    valores = np.array(datos[variable])
+
+    # Calcular medidas estadísticas
+    media = np.mean(valores)
+    mediana = np.median(valores)
+    # moda = stats.mode(valores)[0][0]
+
+    # Crear el histograma
+    plt.figure(figsize=(8, 6))
+    plt.hist(valores, bins=barras, color='skyblue', edgecolor='black', alpha=0.7)
+    plt.axvline(media, color='red', linestyle='--', label=f'Media: {media:.2f}')
+    plt.axvline(mediana, color='green', linestyle='--', label=f'Mediana: {mediana:.2f}')
+    # plt.axvline(moda, color='blue', linestyle='--', label=f'Moda: {moda:.2f}')
+
+    # Etiquetas y título
+    plt.title('Histograma con Media, Mediana')
+    plt.xlabel('Valor')
+    plt.ylabel('Frecuencia')
+    plt.legend()
+    plt.show()
+
+def f_barra(datos, variable, color='lightblue', mostrar='primeros'):
+    # Contar la frecuencia de cada categoría
+    frecuencias = datos[variable].value_counts()
+
+    # Verificar cuántas categorías hay
+    if len(frecuencias) > 10:
+        if mostrar == 'primeros':
+            frecuencias = frecuencias.head(10)  # Primeras 10 categorías
+        elif mostrar == 'ultimos':
+            frecuencias = frecuencias.tail(10)  # Últimas 10 categorías
+
+    # Crear el diagrama de barras
+    plt.figure(figsize=(8, 6))
+    barras = plt.bar(frecuencias.index, frecuencias.values, color=color, edgecolor='black', alpha=0.7)
+
+    # Agregar etiquetas y título
+    plt.xlabel('Categorías')
+    plt.ylabel('Frecuencia')
+    plt.title(f'Diagrama de Barras de {variable} (Mostrando {mostrar} 10)')
+    plt.xticks(rotation=45, ha='right')  # Rotar etiquetas para mejor visualización si son largas
+
+    # Mostrar valores encima de cada barra
+    for barra in barras:
+        plt.text(barra.get_x() + barra.get_width() / 2, barra.get_height(),
+                 f'{int(barra.get_height())}', ha='center', va='bottom', fontsize=10)
+
+    # Mostrar el gráfico
+    plt.show()
+
+# función para ver diagrmas de barras multiples variables
+def f_barra_multiple_matriz(datos, variables=None, color='lightblue', mostrar='primeros'):
+    # Obtener columnas categóricas si no se especificaron
+    if variables is None:
+        variables = datos.select_dtypes(include=['object', 'category']).columns.tolist()
+
+    # Verificar si hay variables categóricas
+    if not variables:
+        print("No hay variables categóricas para graficar.")
+        return
+
+    # Determinar la disposición de la matriz según el número de columnas categóricas
+    num_columnas = len(variables)
+    if num_columnas <= 4:
+        filas, columnas = 2, 2
+    elif num_columnas <= 9:
+        filas, columnas = 3, 3
+    elif num_columnas <= 16:
+        filas, columnas = 4, 4
+    else:
+        columnas = 4
+        filas = math.ceil(num_columnas / columnas)
+
+    # Crear la figura y subplots
+    fig, axes = plt.subplots(filas, columnas, figsize=(columnas * 5, filas * 4))
+    axes = axes.flatten()  # Convertir los ejes en una lista para indexar fácilmente
+
+    # Validar el argumento 'mostrar'
+    if mostrar not in ['primeros', 'ultimos']:
+        mostrar = 'primeros'
+
+    # Generar gráficos
+    for i, variable in enumerate(variables):
+        if i >= len(axes):  # Prevenir error de índice en subplots
+            break
+
+        # Contar la frecuencia de cada categoría
+        frecuencias = datos[variable].value_counts()
+        total = frecuencias.sum()
+        porcentajes = (frecuencias / total) * 100  # Convertir a porcentaje
+
+        # Mostrar solo las primeras o últimas 10 categorías si hay más de 10
+        if len(frecuencias) > 10:
+            if mostrar == 'primeros':
+                frecuencias = frecuencias.head(10)
+                porcentajes = porcentajes.head(10)
+            elif mostrar == 'ultimos':
+                frecuencias = frecuencias.tail(10)
+                porcentajes = porcentajes.tail(10)
+
+        # Dibujar el diagrama de barras en el subplot correspondiente
+        axes[i].bar(frecuencias.index, frecuencias.values, color=color, edgecolor='black', alpha=0.7)
+        axes[i].set_title(f'{variable}')
+        axes[i].set_xlabel('Categorías')
+        axes[i].set_ylabel('Frecuencia')
+        axes[i].tick_params(axis='x', rotation=45)
+
+        # Mostrar valores como porcentajes sobre las barras
+        for j, (valor, porcentaje) in enumerate(zip(frecuencias.values, porcentajes)):
+            axes[i].text(j, valor, f'{porcentaje:.1f}%', ha='center', va='bottom', fontsize=8)
+
+    # Ocultar subplots vacíos
+    for ax in axes[num_columnas:]:
+        ax.axis('off')
+
+    plt.tight_layout()
+    plt.show()
+
+
+
+
+# Función que visualiza múltiples histogramas de variables numéricas
+def f_histograma_multiple_matriz(datos, columnas=None, bins=10, color='skyblue'):
+    """
+    Genera múltiples histogramas organizados en una matriz dependiendo del número de variables numéricas seleccionadas.
+
+    Parámetros:
+    datos (pd.DataFrame): DataFrame que contiene los datos.
+    columnas (list or None): Lista de columnas a graficar. Si es None, selecciona todas las columnas numéricas.
+    bins (int): Número de intervalos para los histogramas.
+    color (str): Color de los histogramas.
+
+    Retorno:
+    Visualiza múltiples histogramas organizados automáticamente.
+    """
+    # Si no se especifican columnas, selecciona todas las numéricas
+    if columnas is None:
+        columnas = datos.select_dtypes(include=['number']).columns.tolist()
+
+    # Determinar el número de filas y columnas (3 o 4 columnas dependiendo del número de variables)
+    n_vars = len(columnas)
+    n_cols = 4 if n_vars > 6 else 3  # Si hay más de 6 variables, usa 4 columnas
+    n_rows = math.ceil(n_vars / n_cols)  # Calcular el número de filas necesarias
+
+    # Configuración de subplots
+    fig, axes = plt.subplots(nrows=n_rows, ncols=n_cols, figsize=(5 * n_cols, 4 * n_rows))
+    axes = axes.flatten()  # Aplanar para fácil iteración
+
+    # Graficar cada variable
+    for i, variable in enumerate(columnas):
+        axes[i].hist(datos[variable].dropna(), bins=bins, color=color, edgecolor='black', alpha=0.7)
+        axes[i].set_title(f'Histograma de {variable}')
+        axes[i].set_xlabel(variable)
+        axes[i].set_ylabel('Frecuencia')
+
+    # Eliminar subplots vacíos si hay menos gráficos que subplots
+    for j in range(i + 1, len(axes)):
+        fig.delaxes(axes[j])
+
+    plt.tight_layout()
+    plt.show()
+
+
+# Función para graficar varios diagrmas de caja de variables numéricas
+def f_diagrama_caja_matriz(datos, columnas=None):
+    """
+    Genera múltiples diagramas de caja organizados en una matriz de hasta 4 por fila.
+
+    Parámetros:
+    datos (pd.DataFrame): DataFrame con las variables numéricas.
+    columnas (list or None): Lista de columnas a graficar. Si es None, selecciona todas las numéricas.
+
+    Salida:
+    Muestra diagramas de caja organizados automáticamente.
+    """
+    # Si no se especifican columnas, selecciona todas las numéricas
+    if columnas is None:
+        columnas = datos.select_dtypes(include=['number']).columns.tolist()
+
+    # Número total de variables a graficar
+    n_vars = len(columnas)
+
+    # Determinar número de filas y columnas (máximo 4 columnas por fila)
+    n_cols = 4  # Fijamos el máximo en 4 columnas por fila
+    n_rows = math.ceil(n_vars / n_cols)  # Calculamos las filas necesarias
+
+    # Crear la figura y los subplots
+    fig, axes = plt.subplots(nrows=n_rows, ncols=n_cols, figsize=(5 * n_cols, 4 * n_rows))
+    axes = axes.flatten()  # Aplanar la matriz de subplots para iterar fácilmente
+
+    # Graficar cada variable numérica
+    for i, variable in enumerate(columnas):
+        datos_var = datos[variable].dropna().values  # Eliminar valores NaN
+
+        # Crear diagrama de caja
+        axes[i].boxplot(datos_var, vert=False, patch_artist=True, boxprops=dict(facecolor="skyblue"))
+        axes[i].set_title(f'Diagrama de Caja de {variable}')
+        axes[i].set_xlabel('Valor')
+
+        # Calcular cuartiles
+        q1, q2, q3 = np.percentile(datos_var, [25, 50, 75])
+
+        # Dibujar líneas de cuartiles
+        axes[i].axvline(x=q1, color='blue', linestyle='--', linewidth=1, alpha=0.7, label=f'Q1: {q1:.2f}')
+        axes[i].axvline(x=q2, color='red', linestyle='--', linewidth=1, alpha=0.7, label=f'Mediana: {q2:.2f}')
+        axes[i].axvline(x=q3, color='blue', linestyle='--', linewidth=1, alpha=0.7, label=f'Q3: {q3:.2f}')
+
+        axes[i].legend(fontsize=8)
+
+    # Eliminar subplots vacíos si hay menos gráficos que subplots
+    for j in range(i + 1, len(axes)):
+        fig.delaxes(axes[j])
+
+    plt.tight_layout()
+    plt.show()
+
+
+## Funciones para transformar datos
+# Definir la función que convierte una lista o arreglo a valores numéricos
+def f_convertir_numeros(valores):
+    # Convertir los valores a numéricos, forzando los no convertibles a NaN
+    numericos = pd.to_numeric(valores, errors='coerce')
+    return numericos
+
+# Definen una función que convierte valores numéricos a valores absolutos
+def f_convertir_absoluto (valores):
+  return np.abs(valores)
+
+# Función median con pandas la función median()
+def f_mediana(valores):
+  # Mediana excluyendo
+  mediana = valores.median()
+  return mediana
+
+def f_convertir_mediana(valores):
+    # Convertir la entrada a una Serie de Pandas si no lo es
+    if not isinstance(valores, pd.Series):
+        valores = pd.Series(valores)
+
+    # Convertir todos los valores a numéricos, forzando los no convertibles a NaN
+    valores_numericos = pd.to_numeric(valores, errors='coerce')
+
+    # Calcular la mediana de los valores numéricos, excluyendo los NaN
+    mediana = valores_numericos.median()
+
+    # Reemplazar los NaN con la mediana
+    numeros = valores_numericos.fillna(mediana)
+
+    return numeros
+
+
+# Función que determina cuartiles
+def f_cuartiles_quantile(datos):
+  q1 = np.percentile(datos, 25)
+  q2 = np.percentile(datos, 50)
+  q3 = np.percentile(datos, 75)
+  return q1, q2, q3
+
+# Función que construye diagrama de caja
+def f_diagrama_caja (datos, contexto):
+  plt.boxplot(datos, vert=False)
+  plt.xlabel(contexto)
+  plt.ylabel('Valor')
+  plt.title('Diagrama de Caja')
+
+  # Calculando cuartiles d ela funci´pn previamente creada
+  q1, q2, q3= f_cuartiles_quantile(datos)
+  # Añadir leyendas para los cuartiles
+  plt.axvline(x=q1, color='blue', linestyle='--', linewidth=1, label=f'Q1: {q1:.2f}')
+  plt.axvline(x=q2, color='blue', linestyle='--', linewidth=1, label=f'Q2:Mediana: {q2:.2f}')
+  plt.axvline(x=q3, color='blue', linestyle='--', linewidth=1, label=f'Q3: {q3:.2f}')
+
+  # Añadir leyenda adicional
+  plt.legend()
+
+  plt.show()
+
+def f_modificar_atipicos (datos):
+
+  datos = np.array(datos)
+  q1, q2, q3 = f_cuartiles_quantile(datos)
+
+  # La mediana
+  mediana = np.median(datos)
+
+  # Rango Intercuartílico RI = q3 - q1
+  RI = q3 - q1
+
+  # Definir los límites para los valores atípicos
+  limite_inferior = q1 - 1.5 * RI
+  limite_superior = q3 + 1.5 * RI
+
+  # Calcular la mediana
+  mediana = np.median(datos)
+
+  # Reemplazar los valores atípicos por la mediana
+  datos[(datos < limite_inferior) | (datos > limite_superior)] = mediana
+
+  return datos
+
+
+# Convertir todos los valores a mayúsculas para estandarizar la columna.
+def f_convertir_MAYUSCULAS(valores):
+  # 1. Convertir todos los valores a mayúsculas
+  valores = valores.str.upper()
+  return valores
+
+# Función para convertir primera MAYUSCULA y resto minúscula
+def f_convertir_MAYUSCULAS_minusculas(valores):
+    # Convertir la primera letra de cada palabra a mayúscula y el resto a minúscula
+    valores = valores.str.capitalize()
+    return valores
+
+def f_reemplazar_generos_moda (valores):
+  moda_generos = valores.mode()[0]
+
+  valores.fillna(moda_generos, inplace=True)
+
+  return valores
+
+# Función que debe modifiar un valor de acuerdo a la cadena que mas se le parezca
+def f_modificar_inicial (valores):
+  # Mapear cualquier valor que sea claramente 'M' o 'F' a 'MASCULINO' o 'FEMENINO'
+  valores = valores.replace({'M': 'MASCULINO', 'F': 'FEMENINO'})
+
+  # Debe identificar los valores únicos los dos que mas se repitan
+  # por ejemplo FEMENINO Y MASCULINO
+  # De cada valor si hay una ler F es FEMENINO
+  # De cada valor si hay una ler M es MASCULINO
+  # De cada valor si se parece por ejemplo GEMENINO se parece a FEMENINO
+  # De cada valor si se parece por ejemplo SASCULINO se parece a MASCULINO
+  return valores
+
+
+
+# Función que modifica valores similares
+def f_modificar_parecidos(valores, opciones=['FEMENINO', 'MASCULINO'], umbral=50):
+    """
+    Estandariza los valores de género en una lista o columna de DataFrame a 'FEMENINO' o 'MASCULINO' basado en la similitud.
+
+    Parámetros:
+    - valores: Una lista o Serie de pandas con los valores de género a estandarizar.
+    - opciones: Una lista de valores aceptados a los que se intentará hacer coincidir los valores.
+    - umbral: El umbral de coincidencia para considerar una equivalencia (0-100).
+
+    Retorna:
+    Una lista o Serie de pandas con los valores estandarizados.
+    """
+    # Función para estandarizar un único valor
+    def estandarizar_valor(valor):
+        if valor is None:  # Verifica si el valor es None antes de proceder
+            return valor
+        mejor_coincidencia, puntaje = process.extractOne(valor.upper(), opciones)
+        return mejor_coincidencia if puntaje > umbral else valor
+
+    # Aplicar la estandarización a cada valor en la lista o Serie
+    if isinstance(valores, pd.Series):
+        return valores.apply(estandarizar_valor)
+    else:
+        return [estandarizar_valor(valor) for valor in valores]
+
+# Funcióin para escalar datos
+def f_escalar(datos, variable):
+    """
+    Escala una columna numérica de un DataFrame usando la fórmula min-max:
+    (x - min(x)) / (max(x) - min(x))
+
+    Parámetros:
+    datos (pd.DataFrame): DataFrame de entrada
+    variable (str): Nombre de la columna numérica a escalar
+
+    Retorna:
+    pd.DataFrame: DataFrame con la columna escalada
+    """
+    if variable not in datos.columns:
+        raise ValueError(f"La columna '{variable}' no existe en el DataFrame.")
+
+    if not pd.api.types.is_numeric_dtype(datos[variable]):
+        raise ValueError(f"La columna '{variable}' no es numérica.")
+
+    min_x = datos[variable].min()
+    max_x = datos[variable].max()
+
+    if min_x == max_x:
+        raise ValueError(f"La columna '{variable}' tiene valores constantes, no se puede escalar.")
+
+    escalado = (datos[variable] - min_x) / (max_x - min_x)
+    return np.round(escalado, 4)
+
+# Función para normalizar datos
+def f_normalizar(datos, variable):
+    """
+    Normaliza una columna numérica de un DataFrame usando la fórmula z-score:
+    (x - media) / desviación estándar
+
+    Parámetros:
+    datos (pd.DataFrame): DataFrame de entrada
+    variable (str): Nombre de la columna numérica a normalizar
+
+    Retorna:
+    pd.DataFrame: DataFrame con la columna normalizada
+    """
+    if variable not in datos.columns:
+        raise ValueError(f"La columna '{variable}' no existe en el DataFrame.")
+
+    if not pd.api.types.is_numeric_dtype(datos[variable]):
+        raise ValueError(f"La columna '{variable}' no es numérica.")
+
+    media_x = datos[variable].mean()
+    std_x = datos[variable].std()
+
+    if std_x == 0:
+        raise ValueError(f"La columna '{variable}' tiene desviación estándar cero, no se puede normalizar.")
+
+    normalizado = (datos[variable] - media_x) / std_x
+    return np.round(normalizado)
