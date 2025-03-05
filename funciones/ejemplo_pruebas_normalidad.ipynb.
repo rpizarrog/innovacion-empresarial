@@ -1,0 +1,68 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import scipy.stats as stats
+import seaborn as sns
+from scipy.stats import kstest, shapiro, anderson
+
+# Generar datos normales
+np.random.seed(42)
+datos_normales = np.random.normal(loc=50, scale=10, size=500)
+
+# Generar datos no normales (distribución exponencial)
+datos_no_normales = np.random.exponential(scale=10, size=500)
+
+# Crear DataFrame
+df = pd.DataFrame({
+    "Normales": datos_normales,
+    "No_Normales": datos_no_normales
+})
+
+# Función para aplicar pruebas de normalidad
+def aplicar_pruebas_normalidad(datos):
+    resultados = {}
+
+    for columna in datos.columns:
+        # Prueba de Kolmogorov-Smirnov
+        stat_ks, p_ks = kstest(datos[columna], 'norm', args=(np.mean(datos[columna]), np.std(datos[columna])))
+        
+        # Prueba de Shapiro-Wilk
+        stat_shapiro, p_shapiro = shapiro(datos[columna])
+        
+        # Prueba de Anderson-Darling
+        resultado_ad = anderson(datos[columna], dist='norm')
+        stat_ad = resultado_ad.statistic
+        crit_values = resultado_ad.critical_values
+        sig_levels = resultado_ad.significance_level
+
+        resultados[columna] = {
+            "Kolmogorov-Smirnov Stat": stat_ks,
+            "Kolmogorov-Smirnov p-value": p_ks,
+            "Shapiro-Wilk Stat": stat_shapiro,
+            "Shapiro-Wilk p-value": p_shapiro,
+            "Anderson-Darling Stat": stat_ad,
+            "Critical Values (5%)": crit_values[2],
+            "Significance Level (5%)": sig_levels[2]
+        }
+
+    return pd.DataFrame(resultados).T
+
+# Aplicar pruebas de normalidad
+resultados_pruebas = aplicar_pruebas_normalidad(df)
+
+# Visualizar gráficos Q-Q
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+# Q-Q Plot para datos normales
+stats.probplot(datos_normales, dist="norm", plot=axes[0])
+axes[0].set_title("Q-Q Plot - Datos Normales")
+
+# Q-Q Plot para datos no normales
+stats.probplot(datos_no_normales, dist="norm", plot=axes[1])
+axes[1].set_title("Q-Q Plot - Datos No Normales")
+
+plt.show()
+
+# Mostrar resultados en tabla
+import ace_tools as tools
+tools.display_dataframe_to_user(name="Resultados Pruebas de Normalidad", dataframe=resultados_pruebas)
