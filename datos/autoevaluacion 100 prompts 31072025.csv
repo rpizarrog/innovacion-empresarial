@@ -1,0 +1,631 @@
+﻿tipo_prompt,herramienta,no_prompt,Procedimientos técnicos,Análisis,Actualidad,Ejemplos vigentes,Herramientas actuales,Aplicación interdisciplinaria,Secuencia,Relevancia,Terminología adecuada,Precisión,Ejemplos relevantes,Ejemplos ilustrativos
+No Experto,ChatGPT,Prompt 1,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 2,4,4,4,4,3,3,4,4,5,4,4,4
+No Experto,ChatGPT,Prompt 3,5,4,5,5,3,3,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 4,4,4,4,4,3,3,4,4,5,4,4,4
+No Experto,ChatGPT,Prompt 5,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 6,5,4,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 7,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 8,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 9,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 10,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 11,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 12,4,4,4,4,3,3,4,4,5,4,4,4
+No Experto,ChatGPT,Prompt 13,5,4,5,5,3,3,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 14,4,4,4,4,3,3,4,4,5,4,4,4
+No Experto,ChatGPT,Prompt 15,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 16,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 17,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 18,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 19,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 20,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 21,5,4,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 22,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 23,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 24,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,ChatGPT,Prompt 25,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGPT,Prompt 26,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,DeepSeek,Prompt 1,3,2,5,5,2,1,4,5,5,5,5,4
+No Experto,DeepSeek,Prompt 2,2,1,4,4,1,1,3,5,5,4,4,3
+No Experto,DeepSeek,Prompt 3,3,2,4,4,2,1,4,5,5,4,4,4
+No Experto,DeepSeek,Prompt 4,4,3,4,4,3,1,3,4,4,3,3,3
+No Experto,DeepSeek,Prompt 5,5,2,5,5,4,1,4,5,5,4,5,4
+No Experto,DeepSeek,Prompt 6,3,3,4,4,4,2,4,5,5,5,4,4
+No Experto,DeepSeek,Prompt 7,3,2,4,4,3,1,5,5,5,5,4,3
+No Experto,DeepSeek,Prompt 8,4,3,5,5,3,4,4,5,5,4,5,4
+No Experto,DeepSeek,Prompt 9,2,2,4,4,2,5,3,5,5,4,4,3
+No Experto,DeepSeek,Prompt 10,3,1,4,5,1,1,4,5,5,5,5,5
+No Experto,DeepSeek,Prompt 11,3,2,4,4,2,1,4,5,5,5,5,4
+No Experto,DeepSeek,Prompt 12,4,3,5,5,2,3,5,5,5,5,5,5
+No Experto,DeepSeek,Prompt 13,5,4,5,5,3,4,4,5,5,5,5,5
+No Experto,DeepSeek,Prompt 14,3,2,4,4,1,1,4,5,5,5,5,4
+No Experto,DeepSeek,Prompt 15,3,2,5,5,2,2,4,5,5,5,5,4
+No Experto,DeepSeek,Prompt 16,4,3,4,4,2,1,5,5,5,5,5,5
+No Experto,DeepSeek,Prompt 17,4,3,4,4,3,2,5,5,5,5,5,5
+No Experto,DeepSeek,Prompt 18,5,4,5,5,2,3,4,5,5,5,5,5
+No Experto,DeepSeek,Prompt 19,4,3,5,5,3,4,5,5,5,5,5,5
+No Experto,DeepSeek,Prompt 20,4,3,5,5,5,3,5,5,5,5,4,4
+No Experto,DeepSeek,Prompt 21,4,3,5,5,3,3,5,5,5,5,4,4
+No Experto,DeepSeek,Prompt 22,5,4,5,5,3,2,5,5,5,5,4,4
+No Experto,DeepSeek,Prompt 23,4,3,5,5,3,3,4,5,5,5,5,4
+No Experto,DeepSeek,Prompt 24,5,4,5,5,3,4,5,5,5,5,5,5
+No Experto,DeepSeek,Prompt 25,4,3,5,5,3,4,4,5,5,5,5,4
+No Experto,DeepSeek,Prompt 26,4,3,5,5,3,4,5,5,5,5,5,5
+No Experto,Copilot,Prompt 1,5,4,4,5,4,3,5,5,5,5,5,5
+No Experto,Copilot,Prompt 2,4,3,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 3,5,4,4,4,4,3,5,5,5,5,5,4
+No Experto,Copilot,Prompt 4,5,4,3,3,5,3,4,4,4,4,3,3
+No Experto,Copilot,Prompt 5,4,3,3,4,4,2,5,4,4,4,4,4
+No Experto,Copilot,Prompt 6,5,4,4,5,4,3,5,5,5,5,5,5
+No Experto,Copilot,Prompt 7,4,4,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 8,5,4,4,5,4,3,5,5,5,5,5,4
+No Experto,Copilot,Prompt 9,4,3,4,4,3,3,4,4,4,4,4,3
+No Experto,Copilot,Prompt 10,5,3,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 11,5,4,3,4,4,3,5,5,5,5,4,4
+No Experto,Copilot,Prompt 12,5,4,4,5,4,3,5,5,5,5,5,5
+No Experto,Copilot,Prompt 13,5,5,4,5,5,4,5,5,5,5,5,5
+No Experto,Copilot,Prompt 14,4,3,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 15,4,3,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 16,5,4,4,5,4,3,5,5,5,5,5,5
+No Experto,Copilot,Prompt 17,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Copilot,Prompt 18,5,5,4,5,5,4,5,5,5,5,5,5
+No Experto,Copilot,Prompt 19,4,3,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 20,4,3,3,4,3,2,4,4,4,4,4,3
+No Experto,Copilot,Prompt 21,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Copilot,Prompt 22,5,5,4,5,5,4,5,5,5,5,5,5
+No Experto,Copilot,Prompt 23,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Copilot,Prompt 24,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Copilot,Prompt 25,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Copilot,Prompt 26,5,4,4,5,4,3,5,5,5,5,5,5
+No Experto,Gemini,Prompt 1,4,4,5,5,4,3,5,5,5,5,5,5
+No Experto,Gemini,Prompt 2,4,5,5,4,3,3,5,5,5,5,4,5
+No Experto,Gemini,Prompt 3,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 4,5,5,5,3,4,4,5,5,5,5,3,4
+No Experto,Gemini,Prompt 5,5,4,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 6,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 7,5,5,5,4,4,4,5,5,5,5,4,5
+No Experto,Gemini,Prompt 8,4,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 9,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Gemini,Prompt 10,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 11,4,5,5,4,3,3,5,5,5,5,4,5
+No Experto,Gemini,Prompt 12,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 13,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Gemini,Prompt 14,4,5,5,5,3,3,5,5,5,5,5,5
+No Experto,Gemini,Prompt 15,4,5,5,5,3,3,5,5,5,5,5,5
+No Experto,Gemini,Prompt 16,4,4,5,4,3,3,5,5,5,5,4,5
+No Experto,Gemini,Prompt 17,4,5,5,4,4,4,5,5,5,5,4,5
+No Experto,Gemini,Prompt 18,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 19,4,4,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 20,4,4,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 21,4,5,5,4,4,4,5,5,5,5,4,5
+No Experto,Gemini,Prompt 22,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 23,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 24,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 25,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Gemini,Prompt 26,4,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Grok,Prompt 1,4,3,5,4,3,2,5,5,5,4,4,4
+No Experto,Grok,Prompt 2,4,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 3,5,4,5,4,3,3,5,5,5,5,5,4
+No Experto,Grok,Prompt 4,5,4,5,4,3,3,5,5,5,4,4,4
+No Experto,Grok,Prompt 5,5,4,5,4,3,3,5,5,5,5,5,4
+No Experto,Grok,Prompt 6,4,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 7,4,3,5,4,3,3,5,5,5,4,4,4
+No Experto,Grok,Prompt 8,4,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok,Prompt 9,4,4,5,4,3,5,5,5,5,4,4,4
+No Experto,Grok,Prompt 10,5,3,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 11,5,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 12,5,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 13,5,4,5,5,3,5,5,5,5,5,5,5
+No Experto,Grok,Prompt 14,4,3,5,4,3,4,5,5,5,4,4,4
+No Experto,Grok,Prompt 15,4,3,5,4,3,4,5,5,5,4,4,4
+No Experto,Grok,Prompt 16,5,3,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 17,4,4,5,3,3,3,5,5,5,4,3,3
+No Experto,Grok,Prompt 18,5,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok,Prompt 19,5,4,5,5,3,5,5,5,5,5,5,5
+No Experto,Grok,Prompt 20,5,4,5,4,4,4,5,5,5,5,4,4
+No Experto,Grok,Prompt 21,4,4,5,4,3,4,5,5,5,4,4,4
+No Experto,Grok,Prompt 22,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok,Prompt 23,4,3,5,4,3,4,5,5,5,4,4,4
+No Experto,Grok,Prompt 24,4,3,5,4,3,4,5,5,5,4,4,4
+No Experto,Grok,Prompt 25,4,3,5,4,3,4,5,5,5,4,4,4
+No Experto,Grok,Prompt 26,5,4,5,5,3,5,5,5,5,5,5,5
+No Experto,Grok100,Prompt1,4,3,5,4,2,4,5,4,5,4,4,3
+No Experto,Grok100,Prompt2,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt3,4,3,5,4,2,3,4,4,5,4,4,3
+No Experto,Grok100,Prompt4,5,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt5,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt6,5,4,5,4,2,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt7,5,3,5,4,5,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt8,5,3,5,3,2,2,4,5,5,5,3,3
+No Experto,Grok100,Prompt9,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt10,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt11,5,3,5,4,2,3,4,5,5,5,4,3
+No Experto,Grok100,Prompt12,4,5,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt13,4,4,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt14,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt15,5,3,5,5,2,4,4,5,5,5,5,4
+No Experto,Grok100,Prompt16,5,3,5,3,2,2,5,5,5,5,3,4
+No Experto,Grok100,Prompt17,4,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt18,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt19,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt20,5,4,5,5,3,5,5,5,5,5,5,4
+No Experto,Grok100,Prompt21,4,4,5,5,2,5,5,5,5,4,5,4
+No Experto,Grok100,Prompt22,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt23,4,5,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt24,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt25,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt26,5,3,5,5,2,4,4,5,5,5,5,4
+No Experto,Grok100,Prompt27,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt28,5,4,5,5,3,5,5,5,5,5,5,4
+No Experto,Grok100,Prompt29,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt30,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt31,4,4,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt32,4,4,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt33,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt34,5,3,5,4,2,3,4,5,5,5,4,3
+No Experto,Grok100,Prompt35,5,5,5,4,2,4,5,5,5,5,4,5
+No Experto,Grok100,Prompt36,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt37,4,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt38,5,3,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt39,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt40,5,2,5,3,2,2,4,5,5,5,3,3
+No Experto,Grok100,Prompt41,4,4,5,4,2,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt42,5,3,5,5,2,4,4,5,5,5,5,4
+No Experto,Grok100,Prompt43,5,3,5,3,2,3,5,5,5,5,3,4
+No Experto,Grok100,Prompt44,5,2,5,4,2,4,4,5,5,5,4,3
+No Experto,Grok100,Prompt45,4,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt46,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt47,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt48,5,5,5,5,3,5,5,5,5,5,5,5
+No Experto,Grok100,Prompt49,4,3,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt50,4,5,5,4,2,5,5,5,5,5,4,4
+No Experto,Grok100,Prompt51,4,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt52,5,3,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt53,5,4,5,4,2,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt54,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt55,5,2,5,4,2,4,4,5,5,5,4,3
+No Experto,Grok100,Prompt56,4,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt57,4,5,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt58,5,4,5,5,3,5,5,5,5,5,5,4
+No Experto,Grok100,Prompt59,5,2,5,4,2,4,4,5,5,5,4,3
+No Experto,Grok100,Prompt60,5,4,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt61,5,3,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt62,5,4,5,5,3,5,5,5,5,5,5,4
+No Experto,Grok100,Prompt63,5,3,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt64,4,5,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt65,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt66,4,5,5,5,2,5,5,5,5,5,5,5
+No Experto,Grok100,Prompt67,5,4,5,5,3,5,5,5,5,5,5,4
+No Experto,Grok100,Prompt68,4,4,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt69,5,3,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt70,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt71,5,4,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt72,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt73,5,5,5,5,2,4,5,5,5,5,5,5
+No Experto,Grok100,Prompt74,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt75,5,3,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt76,5,3,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt77,5,3,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt78,5,3,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt79,5,4,5,5,3,5,5,5,5,5,5,4
+No Experto,Grok100,Prompt80,4,4,5,4,2,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt81,5,3,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt82,5,3,5,5,2,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt83,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt84,5,2,5,4,2,4,4,5,5,5,4,3
+No Experto,Grok100,Prompt85,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt86,5,5,5,5,3,5,5,5,5,5,5,5
+No Experto,Grok100,Prompt87,4,3,5,4,2,4,5,4,5,4,4,3
+No Experto,Grok100,Prompt88,5,4,4,4,4,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt89,4,3,5,4,2,3,4,4,5,4,4,3
+No Experto,Grok100,Prompt90,5,4,5,4,3,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt91,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt92,5,4,5,4,2,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt93,5,3,5,4,5,3,5,5,5,5,4,4
+No Experto,Grok100,Prompt94,5,3,5,3,2,2,4,5,5,5,3,3
+No Experto,Grok100,Prompt95,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,Grok100,Prompt96,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt97,5,3,5,4,2,3,4,5,5,5,4,3
+No Experto,Grok100,Prompt98,4,5,5,4,3,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt99,4,4,5,4,2,4,5,5,5,5,4,4
+No Experto,Grok100,Prompt100,5,4,5,4,3,4,5,5,5,5,4,4
+No Experto,Gemini100,Prompt1,4,4,3,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt2,4,4,3,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt3,4,4,3,3,2,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt4,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt5,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt6,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt7,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt8,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt9,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt10,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt11,3,3,2,2,2,2,3,3,3,3,2,3
+No Experto,Gemini100,Prompt12,3,3,2,2,2,2,3,3,3,3,2,3
+No Experto,Gemini100,Prompt13,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt14,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt15,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt16,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt17,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt18,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt19,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt20,4,4,3,3,3,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt21,3,3,2,3,2,3,3,3,3,3,3,3
+No Experto,Gemini100,Prompt22,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt23,4,4,3,3,4,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt24,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt25,4,4,3,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt26,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt27,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt28,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt29,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt30,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt31,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt32,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt33,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt34,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt35,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt36,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt37,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt38,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt39,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt40,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt41,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt42,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt43,3,3,3,3,2,3,3,3,3,3,3,3
+No Experto,Gemini100,Prompt44,4,4,3,3,2,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt45,3,3,3,3,2,3,3,3,3,3,3,3
+No Experto,Gemini100,Prompt46,4,4,3,3,2,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt47,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt48,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt49,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt50,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt51,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt52,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt53,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt54,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt55,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt56,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt57,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt58,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt59,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt60,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt61,5,4,4,4,3,4,4,4,5,5,4,4
+No Experto,Gemini100,Prompt62,4,4,3,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt63,4,4,3,3,2,3,4,4,4,4,3,4
+No Experto,Gemini100,Prompt64,4,4,3,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt65,5,4,4,4,3,4,4,4,5,5,4,4
+No Experto,Gemini100,Prompt66,5,4,4,4,3,4,4,4,5,5,4,4
+No Experto,Gemini100,Prompt67,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt68,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt69,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt70,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt71,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt72,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt73,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt74,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt75,4,4,4,4,3,3,4,4,4,4,4,4
+No Experto,Gemini100,Prompt76,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt77,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt78,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt79,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt80,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt81,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt82,3,3,3,3,4,3,3,3,3,3,3,3
+No Experto,Gemini100,Prompt83,4,4,3,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt84,4,4,4,3,4,4,4,4,4,4,3,4
+No Experto,Gemini100,Prompt85,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt86,4,4,4,4,2,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt87,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt88,4,4,3,3,2,4,4,4,4,4,3,4
+No Experto,Gemini100,Prompt89,4,4,3,4,2,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt90,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt91,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt92,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt93,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Gemini100,Prompt94,4,4,4,4,3,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt95,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt96,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt97,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt98,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt99,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Gemini100,Prompt100,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Copilot100,Prompt1,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt2,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt3,4,4,5,3,3,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt4,4,3,4,4,3,2,4,4,4,4,4,3
+No Experto,Copilot100,Prompt5,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt6,5,4,5,3,5,3,5,5,5,5,3,3
+No Experto,Copilot100,Prompt7,5,3,4,3,4,2,4,4,4,4,3,3
+No Experto,Copilot100,Prompt8,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt9,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt10,4,4,5,4,4,3,4,5,4,4,4,4
+No Experto,Copilot100,Prompt11,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt12,4,4,4,4,4,4,4,4,4,4,4,4
+No Experto,Copilot100,Prompt13,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt14,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt15,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt16,5,5,5,4,5,4,5,5,5,5,4,4
+No Experto,Copilot100,Prompt17,4,3,4,4,3,2,4,4,4,4,4,3
+No Experto,Copilot100,Prompt18,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt19,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt20,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt21,5,4,4,3,4,3,5,4,5,5,3,3
+No Experto,Copilot100,Prompt22,4,4,5,4,4,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt23,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt24,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt25,4,4,4,4,4,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt26,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt27,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt28,4,4,4,4,4,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt29,5,5,5,4,5,4,5,5,5,5,4,4
+No Experto,Copilot100,Prompt30,4,4,5,4,5,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt31,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt32,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt33,4,4,5,4,5,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt34,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt35,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt36,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt37,4,4,5,4,4,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt38,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt39,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt40,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt41,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt42,4,4,5,4,5,4,4,4,4,4,4,4
+No Experto,Copilot100,Prompt43,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt44,4,3,4,3,4,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt45,4,3,4,3,4,2,4,4,4,4,3,3
+No Experto,Copilot100,Prompt46,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt47,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt48,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt49,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt50,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt51,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt52,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt53,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt54,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt55,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt56,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt57,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt58,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt59,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt60,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt61,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt62,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt63,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt64,4,4,5,4,4,3,4,4,4,4,4,4
+No Experto,Copilot100,Prompt65,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt66,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,Copilot100,Prompt67,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt68,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt69,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt70,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt71,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt72,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt73,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt74,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt75,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt76,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt77,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt78,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt79,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt80,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt81,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt82,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt83,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt84,4,5,5,4,4,4,4,5,4,4,4,4
+No Experto,Copilot100,Prompt85,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt86,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt87,4,5,5,4,4,5,4,5,4,4,4,4
+No Experto,Copilot100,Prompt88,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt89,4,5,5,4,4,5,4,5,4,4,4,4
+No Experto,Copilot100,Prompt90,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt91,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt92,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,Copilot100,Prompt93,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,Copilot100,Prompt94,4,5,5,4,4,4,4,5,4,4,4,4
+No Experto,Copilot100,Prompt95,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt96,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt97,4,5,5,4,4,5,4,5,4,4,4,4
+No Experto,Copilot100,Prompt98,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,Copilot100,Prompt99,4,5,5,4,4,5,4,5,4,4,4,4
+No Experto,Copilot100,Prompt100,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt1,4,3,5,5,3,2,4,5,5,4,4,3
+No Experto,DeepSeek100,Prompt2,5,4,4,3,2,1,5,4,4,5,3,2
+No Experto,DeepSeek100,Prompt3,5,3,5,4,3,3,4,5,5,4,5,4
+No Experto,DeepSeek100,Prompt4,3,1,2,1,1,1,3,2,4,3,2,1
+No Experto,DeepSeek100,Prompt5,4,4,3,3,4,2,5,4,5,4,3,3
+No Experto,DeepSeek100,Prompt6,2,2,3,2,1,1,3,3,3,2,2,1
+No Experto,DeepSeek100,Prompt7,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt8,3,2,2,1,2,1,3,3,4,3,1,1
+No Experto,DeepSeek100,Prompt9,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt10,2,3,3,3,2,2,3,4,3,2,3,2
+No Experto,DeepSeek100,Prompt11,4,3,5,4,4,3,4,5,5,4,4,3
+No Experto,DeepSeek100,Prompt12,5,4,5,5,3,4,5,5,4,5,5,4
+No Experto,DeepSeek100,Prompt13,3,2,3,2,2,1,3,3,3,3,2,2
+No Experto,DeepSeek100,Prompt14,4,4,4,3,4,2,4,4,5,4,3,3
+No Experto,DeepSeek100,Prompt15,5,3,4,3,5,5,5,4,5,5,4,3
+No Experto,DeepSeek100,Prompt16,5,2,3,1,2,1,3,3,4,3,1,1
+No Experto,DeepSeek100,Prompt17,4,3,2,1,3,2,4,3,4,4,2,2
+No Experto,DeepSeek100,Prompt18,3,1,2,1,1,1,2,2,3,2,1,1
+No Experto,DeepSeek100,Prompt19,5,5,4,3,4,4,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt20,4,4,5,5,3,3,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt21,4,5,4,3,3,4,4,5,5,4,4,3
+No Experto,DeepSeek100,Prompt22,5,4,5,5,2,3,5,5,4,5,5,4
+No Experto,DeepSeek100,Prompt23,3,3,4,3,4,2,3,4,4,3,3,2
+No Experto,DeepSeek100,Prompt24,5,2,3,2,3,1,3,3,4,3,2,1
+No Experto,DeepSeek100,Prompt25,4,4,5,4,5,3,4,5,5,4,4,4
+No Experto,DeepSeek100,Prompt26,5,3,5,5,2,4,5,5,4,5,5,5
+No Experto,DeepSeek100,Prompt27,4,5,3,2,3,5,4,4,5,4,3,3
+No Experto,DeepSeek100,Prompt28,5,4,5,5,3,4,5,5,5,5,5,4
+No Experto,DeepSeek100,Prompt29,4,5,4,4,4,5,4,5,5,4,4,5
+No Experto,DeepSeek100,Prompt30,5,3,5,4,5,5,5,5,5,5,4,3
+No Experto,DeepSeek100,Prompt31,4,3,5,5,4,2,4,5,5,4,5,4
+No Experto,DeepSeek100,Prompt32,5,4,4,3,2,3,5,4,4,5,3,2
+No Experto,DeepSeek100,Prompt33,4,3,5,4,3,4,4,5,4,4,4,3
+No Experto,DeepSeek100,Prompt34,3,4,4,3,3,3,3,4,3,3,3,2
+No Experto,DeepSeek100,Prompt35,5,4,4,3,3,4,5,5,4,5,4,3
+No Experto,DeepSeek100,Prompt36,4,3,5,4,2,3,4,5,4,4,4,3
+No Experto,DeepSeek100,Prompt37,3,4,3,2,4,2,3,3,3,3,2,2
+No Experto,DeepSeek100,Prompt38,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt39,4,4,4,3,3,4,4,4,5,4,3,3
+No Experto,DeepSeek100,Prompt40,5,3,4,3,4,3,5,4,5,5,3,2
+No Experto,DeepSeek100,Prompt41,4,4,5,4,4,3,4,5,4,4,4,3
+No Experto,DeepSeek100,Prompt42,3,2,3,2,2,1,3,3,3,3,2,1
+No Experto,DeepSeek100,Prompt43,4,3,3,2,3,2,4,3,4,4,2,2
+No Experto,DeepSeek100,Prompt44,5,4,4,3,4,3,5,4,5,5,3,3
+No Experto,DeepSeek100,Prompt45,4,4,4,3,4,5,4,4,5,4,3,4
+No Experto,DeepSeek100,Prompt46,3,4,5,4,3,4,3,5,3,3,4,3
+No Experto,DeepSeek100,Prompt47,5,5,5,4,5,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt48,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,DeepSeek100,Prompt49,4,3,4,3,4,3,4,4,4,4,3,3
+No Experto,DeepSeek100,Prompt50,5,4,5,4,5,4,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt51,4,4,5,4,3,4,4,5,5,4,5,4
+No Experto,DeepSeek100,Prompt52,5,3,4,3,2,3,5,4,4,5,3,2
+No Experto,DeepSeek100,Prompt53,4,5,4,4,3,4,4,5,4,4,5,4
+No Experto,DeepSeek100,Prompt54,3,4,3,2,2,3,3,3,3,3,2,2
+No Experto,DeepSeek100,Prompt55,3,2,3,1,5,1,3,2,3,3,1,1
+No Experto,DeepSeek100,Prompt56,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt57,5,5,4,4,4,5,5,5,5,5,4,5
+No Experto,DeepSeek100,Prompt58,4,4,5,5,3,4,4,5,4,4,5,4
+No Experto,DeepSeek100,Prompt59,5,3,5,5,2,3,5,5,5,5,5,3
+No Experto,DeepSeek100,Prompt60,4,5,3,2,1,5,4,4,5,4,3,2
+No Experto,DeepSeek100,Prompt61,3,4,4,3,2,4,3,4,3,3,3,3
+No Experto,DeepSeek100,Prompt62,5,4,5,5,4,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt63,4,3,5,5,3,2,4,5,4,4,5,3
+No Experto,DeepSeek100,Prompt64,5,5,4,3,5,5,5,5,5,5,4,5
+No Experto,DeepSeek100,Prompt65,4,4,3,2,4,3,4,4,4,4,3,2
+No Experto,DeepSeek100,Prompt66,5,4,5,4,4,4,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt67,5,3,5,5,3,4,5,5,5,5,5,4
+No Experto,DeepSeek100,Prompt68,5,5,5,5,4,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt69,4,5,5,4,5,5,4,5,5,4,4,5
+No Experto,DeepSeek100,Prompt70,4,4,4,4,3,4,4,5,4,4,4,3
+No Experto,DeepSeek100,Prompt71,4,4,5,4,4,3,4,5,5,4,5,4
+No Experto,DeepSeek100,Prompt72,5,3,4,3,3,4,5,4,4,5,3,3
+No Experto,DeepSeek100,Prompt73,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,DeepSeek100,Prompt74,3,3,4,3,5,2,3,4,3,3,3,2
+No Experto,DeepSeek100,Prompt75,5,4,5,4,4,5,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt76,4,5,5,5,4,5,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt77,3,4,4,3,3,4,3,4,3,3,3,3
+No Experto,DeepSeek100,Prompt78,4,3,4,3,3,2,4,4,4,4,3,2
+No Experto,DeepSeek100,Prompt79,5,4,5,4,4,4,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt80,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,DeepSeek100,Prompt81,5,5,5,4,5,5,5,5,5,5,4,5
+No Experto,DeepSeek100,Prompt82,4,5,5,5,3,5,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt83,5,4,5,4,5,4,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt84,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,DeepSeek100,Prompt85,3,3,4,3,4,2,3,4,3,3,3,1
+No Experto,DeepSeek100,Prompt86,4,5,5,5,3,5,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt87,5,4,5,3,5,5,5,5,5,5,3,3
+No Experto,DeepSeek100,Prompt88,4,4,5,4,5,4,4,5,4,4,4,4
+No Experto,DeepSeek100,Prompt89,4,5,5,5,4,5,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt90,3,4,5,4,3,4,3,5,3,3,4,4
+No Experto,DeepSeek100,Prompt91,5,4,5,5,4,4,5,5,5,5,5,4
+No Experto,DeepSeek100,Prompt92,4,4,5,5,4,5,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt93,5,4,5,4,5,5,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt94,5,5,5,5,5,5,5,5,5,5,5,5
+No Experto,DeepSeek100,Prompt95,4,5,5,5,4,5,4,5,4,4,5,5
+No Experto,DeepSeek100,Prompt96,3,3,4,3,3,2,3,4,3,3,3,2
+No Experto,DeepSeek100,Prompt97,4,4,4,3,4,3,4,4,4,4,3,3
+No Experto,DeepSeek100,Prompt98,5,4,5,4,5,4,5,5,5,5,4,4
+No Experto,DeepSeek100,Prompt99,5,4,5,3,5,5,5,5,5,5,3,3
+No Experto,DeepSeek100,Prompt100,5,4,5,5,4,5,5,5,5,5,5,4
+No Experto,ChatGpt100,Prompt1,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt2,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt3,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt4,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt5,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt6,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt7,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt8,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt9,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt10,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt11,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt12,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt13,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt14,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt15,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt16,5,5,5,4,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt17,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt18,5,4,5,4,4,4,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt19,5,4,5,4,4,4,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt20,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt21,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt22,5,5,5,5,4,2,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt23,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt24,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt25,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt26,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt27,5,4,5,4,5,4,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt28,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt29,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt30,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt31,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt32,5,4,5,4,5,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt33,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt34,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt35,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt36,5,5,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt37,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt38,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt39,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt40,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt41,5,5,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt42,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt43,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt44,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt45,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt46,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt47,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt48,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt49,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt50,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt51,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt52,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt53,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt54,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt55,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt56,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt57,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt58,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt59,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt60,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt61,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt62,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt63,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt64,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt65,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt66,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt67,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt68,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt69,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt70,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt71,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt72,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt73,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt74,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt75,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt76,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt77,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt78,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt79,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt80,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt81,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt82,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt83,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt84,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt85,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt86,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt87,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt88,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt89,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt90,4,3,4,3,3,2,4,4,4,4,3,3
+No Experto,ChatGpt100,Prompt91,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt92,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt93,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt94,5,4,5,4,4,3,5,5,5,5,4,4
+No Experto,ChatGpt100,Prompt95,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt96,5,5,5,5,4,3,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt97,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt98,5,5,5,5,5,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt99,5,5,5,5,4,4,5,5,5,5,5,5
+No Experto,ChatGpt100,Prompt100,5,5,5,5,5,4,5,5,5,5,5,5
